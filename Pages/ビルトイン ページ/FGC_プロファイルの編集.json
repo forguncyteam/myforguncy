@@ -1,23 +1,54 @@
 {
   "Rows": {
-    "Count": 25
+    "Sizes": {
+      "16": 30.0,
+      "18": 30.0
+    },
+    "Count": 26
   },
   "Cols": {
-    "Count": 18
+    "Count": 47
   },
   "Values": {
-    "2,3": "パスワードの変更",
-    "6,3": "現在のパスワード",
-    "10,3": "新しいパスワード",
-    "14,3": "新しいパスワードの確認",
-    "19,3": "パスワードの変更",
-    "22,3": "キャンセル"
+    "5,11": "ユーザー情報の編集",
+    "12,15": "",
+    "16,15": "氏名",
+    "16,16": "*",
+    "18,15": "メールアドレス",
+    "18,16": "*",
+    "21,24": "保存",
+    "21,29": "キャンセル"
   },
   "AttachInfos": {
-    "7,3": {
+    "9,17": {
+      "CellType": {
+        "$type": "Forguncy.UploadImageCellType, Forguncy",
+        "TemplateKey": "_RS_Shadow_EmptyText",
+        "UploadImageLimit": {
+          "IsCompressImage": true,
+          "MaxWidth": 300.0,
+          "MaxHeight": 300.0
+        },
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "ForguncyAttribute": "ChangeProfile_Picture"
+      }
+    },
+    "16,17": {
       "CellType": {
         "$type": "Forguncy.TextCellType, Forguncy",
-        "ShowPassword": true,
         "SavedValidators": [
           {
             "$type": "Forguncy.CellTypes.Models.UniqueValidadator, Forguncy"
@@ -38,13 +69,21 @@
             ]
           }
         ],
-        "ForguncyAttribute": "ChangePassword_OldPassword"
+        "ForguncyAttribute": "ChangeProfile_FullName"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false,
+        "FirstParamValue": "",
+        "SecondParamValue": "",
+        "InputMessageTitle": "",
+        "InputMessage": "",
+        "ErrorMessage": "",
+        "SelectedDefaultRegularExpression": ""
       }
     },
-    "11,3": {
+    "18,17": {
       "CellType": {
         "$type": "Forguncy.TextCellType, Forguncy",
-        "ShowPassword": true,
         "SavedValidators": [
           {
             "$type": "Forguncy.CellTypes.Models.UniqueValidadator, Forguncy"
@@ -65,40 +104,22 @@
             ]
           }
         ],
-        "ForguncyAttribute": "ChangePassword_NewPassword"
+        "ForguncyAttribute": "ChangeProfile_Email"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false,
+        "FirstParamValue": "",
+        "SecondParamValue": "",
+        "InputMessageTitle": "",
+        "InputMessage": "",
+        "ErrorMessage": "",
+        "SelectedDefaultRegularExpression": ""
       }
     },
-    "15,3": {
-      "CellType": {
-        "$type": "Forguncy.TextCellType, Forguncy",
-        "ShowPassword": true,
-        "SavedValidators": [
-          {
-            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, Forguncy"
-          }
-        ],
-        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ],
-        "ForguncyAttribute": "ChangePassword_ConfirmPassword"
-      }
-    },
-    "19,3": {
+    "21,24": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, Forguncy",
-        "Text": "パスワードの変更",
+        "Text": "保存",
         "AutoExecute": true,
         "TemplateKey": "_RS_Normal_Style2",
         "UIPermissions": [
@@ -115,12 +136,12 @@
             ]
           }
         ],
-        "ForguncyAttribute": "ChangePassword_Button"
+        "ForguncyAttribute": "ChangeProfile_Button"
       }
     },
-    "22,3": {
+    "21,29": {
       "CellType": {
-        "$type": "Forguncy.ButtonCellType, Forguncy",
+        "$type": "Forguncy.HyperlinkCellType, Forguncy",
         "CommandList": [
           {
             "$type": "Forguncy.Model.NavigateCommand, Forguncy",
@@ -129,7 +150,6 @@
           }
         ],
         "Text": "キャンセル",
-        "TemplateKey": "_RS_Outline_Style2",
         "UIPermissions": [
           {
             "Scope": 2,
@@ -150,74 +170,94 @@
   "StyleDatas": {
     "Styles": [
       {
-        "FontSize": 21.333333969116211,
-        "Foreground": 0,
-        "Formatter": 1,
+        "FontSize": 37.333332061767578,
+        "Foreground": 0
+      },
+      {
+        "FontSize": 14.0,
+        "Foreground": 1,
         "HorizontalAlignment": 2,
-        "VerticalAlignment": 3
+        "Underline": false,
+        "Strikethrough": false
       },
       {
-        "FontSize": 14.666666984558105,
-        "Foreground": 4,
-        "Formatter": 1
+        "Foreground": 3,
+        "VerticalAlignment": 4
       },
       {
-        "FontSize": 16.0,
-        "Foreground": null,
         "Formatter": 5
       },
       {
-        "FontSize": 16.0,
+        "FontWeight": 6
+      },
+      {
         "FontWeight": 6,
-        "Foreground": null,
-        "Formatter": 1
+        "Foreground": 7,
+        "HorizontalAlignment": 8
       }
     ],
     "Types": {
       "Strs": [
-        "#FF09519D",
-        "[AUTO]General",
-        "Center",
-        "Bottom",
-        "#FF7F7F7F",
+        "Text 1 25",
+        "Text 1 35",
+        "Right",
+        "#FFFF0000",
+        "Top",
         "@",
         "Bold",
-        "Body",
-        "#FF000000"
+        "Accent 1 0",
+        "Center",
+        "Body"
       ]
     },
     "CellStyles": {
-      "2,3": 0,
-      "6,3": 1,
-      "7,3": 2,
-      "10,3": 1,
-      "11,3": 2,
-      "14,3": 1,
-      "15,3": 2,
-      "19,3": 3,
-      "22,3": 3
+      "5,11": 0,
+      "12,15": 1,
+      "16,15": 1,
+      "16,16": 2,
+      "16,17": 3,
+      "18,15": 1,
+      "18,16": 2,
+      "18,17": 3,
+      "21,24": 4,
+      "21,29": 5
     },
     "SheetStyle": {
-      "FontFamily": 7,
-      "FontSize": 13.333333015441895,
-      "Foreground": 8
+      "FontFamily": 9,
+      "Underline": false,
+      "Strikethrough": false
     }
   },
   "Spans": [
-    "2,3,2,12",
-    "7,3,2,12",
-    "11,3,2,12",
-    "15,3,2,12",
-    "19,3,2,12",
-    "22,3,2,12"
+    "5,11,3,18",
+    "9,17,6,16",
+    "16,17,1,16",
+    "18,17,1,16",
+    "21,24,2,5",
+    "21,29,2,5"
+  ],
+  "BackgroundPictures": [
+    {
+      "StyleInfo": {
+        "Fill": "Background 1 -5",
+        "Stroke": "Background 1 -25",
+        "StrokeThickness": 1.0
+      },
+      "IsAutomaticStroke": false,
+      "IsAutomaticFill": false,
+      "Name": "5eb739c3-15b6-4d8f-9c34-066f9a907711.png",
+      "Location": "200,80",
+      "Size": "540,440"
+    }
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, Forguncy",
-    "Title": "パスワードの変更",
+    "MasterPageName": "FGC_ユーザーマスターページ",
+    "MobilePageName": "FGC_プロファイルの編集_モバイル",
+    "Title": "ユーザー情報の編集",
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "IsBuiltInPage": true,
-    "IsMobilePage": true
+    "IsBuiltInPage": true
   },
   "PrintInfo": {
     "Margin": {},

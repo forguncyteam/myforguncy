@@ -1,20 +1,30 @@
 {
   "Rows": {
-    "Count": 25
+    "Sizes": {
+      "11": 7.0,
+      "12": 16.0,
+      "13": 7.0,
+      "16": 7.0,
+      "17": 16.0,
+      "18": 7.0
+    },
+    "Count": 29
   },
   "Cols": {
-    "Count": 18
+    "Count": 47
   },
   "Values": {
-    "2,3": "パスワードのリセット",
-    "6,3": "新しいパスワード",
-    "10,3": "新しいパスワードの確認",
-    "15,3": "リセット",
-    "18,3": "キャンセル",
-    "23,1": "簡単に推測できるパスワードは避けてください"
+    "5,12": "パスワードのリセット",
+    "8,14": "簡単に推測できるパスワードは避けてください",
+    "11,19": "*",
+    "12,18": "新しいパスワード",
+    "16,19": "*",
+    "17,18": "新しいパスワードの確認",
+    "21,25": "リセット",
+    "21,30": "キャンセル"
   },
   "AttachInfos": {
-    "7,3": {
+    "11,22": {
       "CellType": {
         "$type": "Forguncy.TextCellType, Forguncy",
         "ShowPassword": true,
@@ -39,9 +49,18 @@
           }
         ],
         "ForguncyAttribute": "ResetPassword_NewPassword"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false,
+        "FirstParamValue": "",
+        "SecondParamValue": "",
+        "InputMessageTitle": "",
+        "InputMessage": "",
+        "ErrorMessage": "",
+        "SelectedDefaultRegularExpression": ""
       }
     },
-    "11,3": {
+    "16,22": {
       "CellType": {
         "$type": "Forguncy.TextCellType, Forguncy",
         "ShowPassword": true,
@@ -66,9 +85,18 @@
           }
         ],
         "ForguncyAttribute": "ResetPassword_ConfirmPassword"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false,
+        "FirstParamValue": "",
+        "SecondParamValue": "",
+        "InputMessageTitle": "",
+        "InputMessage": "",
+        "ErrorMessage": "",
+        "SelectedDefaultRegularExpression": ""
       }
     },
-    "15,3": {
+    "21,25": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, Forguncy",
         "Text": "リセット",
@@ -91,9 +119,9 @@
         "ForguncyAttribute": "ResetPassword_Button"
       }
     },
-    "18,3": {
+    "21,30": {
       "CellType": {
-        "$type": "Forguncy.ButtonCellType, Forguncy",
+        "$type": "Forguncy.HyperlinkCellType, Forguncy",
         "CommandList": [
           {
             "$type": "Forguncy.Model.NavigateCommand, Forguncy",
@@ -102,7 +130,6 @@
           }
         ],
         "Text": "キャンセル",
-        "TemplateKey": "_RS_Outline_Style2",
         "UIPermissions": [
           {
             "Scope": 2,
@@ -123,79 +150,101 @@
   "StyleDatas": {
     "Styles": [
       {
-        "FontSize": 21.333333969116211,
-        "Foreground": 0,
-        "Formatter": 1,
-        "HorizontalAlignment": 2,
-        "VerticalAlignment": 3
+        "FontSize": 37.333332061767578,
+        "Foreground": 0
       },
       {
-        "FontSize": 14.666666984558105,
+        "Foreground": 0
+      },
+      {
+        "Foreground": 1,
+        "VerticalAlignment": 2,
+        "Underline": null,
+        "Strikethrough": null
+      },
+      {
+        "Formatter": 3
+      },
+      {
+        "FontSize": 14.0,
         "Foreground": 4,
-        "Formatter": 1
+        "HorizontalAlignment": 5
       },
       {
-        "FontSize": 16.0,
-        "Foreground": null,
-        "Formatter": 5
+        "FontSize": 14.0,
+        "FontWeight": 6
       },
       {
-        "FontSize": 16.0,
+        "FontSize": 14.0,
         "FontWeight": 6,
-        "Foreground": null,
-        "Formatter": 1
-      },
-      {
-        "FontSize": 12.0,
-        "Foreground": 4,
-        "Formatter": 1,
-        "HorizontalAlignment": 2
+        "Foreground": 7,
+        "HorizontalAlignment": 8
       }
     ],
     "Types": {
       "Strs": [
-        "Accent 1 -50",
-        "[AUTO]General",
-        "Center",
-        "Bottom",
-        "#FF7F7F7F",
+        "Text 1 25",
+        "#FFFF0000",
+        "Top",
         "@",
+        "Text 1 35",
+        "Right",
         "Bold",
-        "Body",
-        "#FF000000"
+        "Accent 1 0",
+        "Center",
+        "Body"
       ]
     },
     "CellStyles": {
-      "2,3": 0,
-      "6,3": 1,
-      "7,3": 2,
-      "10,3": 1,
-      "11,3": 2,
-      "15,3": 3,
-      "18,3": 3,
-      "23,1": 4
+      "5,12": 0,
+      "8,14": 1,
+      "11,19": 2,
+      "11,22": 3,
+      "12,18": 4,
+      "16,19": 2,
+      "16,22": 3,
+      "17,18": 4,
+      "21,25": 5,
+      "21,30": 6
     },
     "SheetStyle": {
-      "FontFamily": 7,
-      "FontSize": 13.333333015441895,
-      "Foreground": 8
+      "FontFamily": 9,
+      "Underline": false,
+      "Strikethrough": false
     }
   },
   "Spans": [
-    "2,3,2,12",
-    "7,3,2,12",
-    "11,3,2,12",
-    "15,3,2,12",
-    "18,3,2,12",
-    "23,1,1,16"
+    "5,12,3,23",
+    "11,22,3,12",
+    "16,22,3,12",
+    "21,25,2,5",
+    "21,30,2,5",
+    "8,14,2,20",
+    "11,19,2,1",
+    "16,19,2,1"
+  ],
+  "BackgroundPictures": [
+    {
+      "StyleInfo": {
+        "Fill": "Background 1 -5",
+        "Stroke": "Background 1 -25",
+        "StrokeThickness": 1.0
+      },
+      "IsAutomaticStroke": false,
+      "IsAutomaticFill": false,
+      "Name": "3f3472c7-d700-4840-869e-07837142e4f7.png",
+      "Location": "200,80",
+      "Size": "540,360"
+    }
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, Forguncy",
+    "MasterPageName": "FGC_ユーザーマスターページ",
+    "MobilePageName": "FGC_パスワードのリセット_モバイル",
     "Title": "パスワードのリセット",
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "IsBuiltInPage": true,
-    "IsMobilePage": true
+    "IsBuiltInPage": true
   },
   "PrintInfo": {
     "Margin": {},

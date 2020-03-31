@@ -1,2 +1,93 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ServerCommand />
+<ServerCommand>
+  <Item class="Forguncy.ServerCommands.Models.ServerCommands" assembly="Forguncy">
+    <Commands>
+      <Item class="Forguncy.Model.ExportPageToPdfCommand" assembly="Forguncy">
+        <ExportListViewCurrentRowInfos>
+          <Item class="Forguncy.Model.ExportListViewCurrentRowInfo" assembly="Forguncy">
+            <BindingTable>納品ビュー</BindingTable>
+            <CurrentRowCondition class="ForguncyDataAccess.GeneralCESqlCondition" assembly="ForguncyDataAccess">
+              <ColumnBindingInfo>
+                <ColumnName>連結キー</ColumnName>
+                <TableName>納品ビュー</TableName>
+              </ColumnBindingInfo>
+              <CompareType>EqualsTo</CompareType>
+              <Id>09136eed-2c58-40de-9158-6380cbbdf535</Id>
+              <Value class="Forguncy.Model.FormulaReferObject" assembly="Forguncy">
+                <SerializeProperty>=連結キー</SerializeProperty>
+              </Value>
+            </CurrentRowCondition>
+          </Item>
+        </ExportListViewCurrentRowInfos>
+        <ServerExportFileName class="Forguncy.Model.FormulaReferObject" assembly="Forguncy">
+          <SerializeProperty>=フォルダパス&amp;"\"&amp;TEXT(納品希望日,"yyyyMMdd")&amp;"_"&amp;業者名&amp;"_"&amp;店舗名</SerializeProperty>
+        </ServerExportFileName>
+        <TargetPageName>発注書出力</TargetPageName>
+      </Item>
+    </Commands>
+    <Name>サーバーサイドPDFエクスポート</Name>
+    <Triggers>
+      <Item class="Forguncy.ServerCommands.Models.PostRequestTrigger" assembly="Forguncy">
+        <Parameters>
+          <Item class="Forguncy.ServerCommands.Models.PostRequestParameter" assembly="Forguncy">
+            <ArrayItems>
+              <Item type="System.String">
+                <Value>連結キー</Value>
+              </Item>
+              <Item type="System.String">
+                <Value>納品日ID</Value>
+              </Item>
+              <Item type="System.String">
+                <Value>店舗ID</Value>
+              </Item>
+              <Item type="System.String">
+                <Value>業者ID</Value>
+              </Item>
+            </ArrayItems>
+            <Name>納品ビュー</Name>
+            <PrimaryKeys>
+              <Item type="System.String">
+                <Value>ID</Value>
+              </Item>
+            </PrimaryKeys>
+            <Type>Array</Type>
+          </Item>
+          <Item class="Forguncy.ServerCommands.Models.PostRequestParameter" assembly="Forguncy">
+            <Name>連結キー</Name>
+          </Item>
+          <Item class="Forguncy.ServerCommands.Models.PostRequestParameter" assembly="Forguncy">
+            <Name>発注No</Name>
+          </Item>
+          <Item class="Forguncy.ServerCommands.Models.PostRequestParameter" assembly="Forguncy">
+            <Name>レコード件数</Name>
+          </Item>
+          <Item class="Forguncy.ServerCommands.Models.PostRequestParameter" assembly="Forguncy">
+            <Name>発注済み</Name>
+          </Item>
+          <Item class="Forguncy.ServerCommands.Models.PostRequestParameter" assembly="Forguncy">
+            <Name>納品希望日</Name>
+          </Item>
+          <Item class="Forguncy.ServerCommands.Models.PostRequestParameter" assembly="Forguncy">
+            <Name>業者名</Name>
+          </Item>
+          <Item class="Forguncy.ServerCommands.Models.PostRequestParameter" assembly="Forguncy">
+            <Name>店舗名</Name>
+          </Item>
+          <Item class="Forguncy.ServerCommands.Models.PostRequestParameter" assembly="Forguncy">
+            <Name>フォルダパス</Name>
+          </Item>
+        </Parameters>
+        <Permission>
+          <AllowRoles>
+            <Item type="System.String">
+              <Value>FGC_LoginUser</Value>
+            </Item>
+            <Item type="System.String">
+              <Value>FGC_Anonymous</Value>
+            </Item>
+          </AllowRoles>
+        </Permission>
+      </Item>
+    </Triggers>
+  </Item>
+</ServerCommand>

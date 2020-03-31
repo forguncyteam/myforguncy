@@ -1,2 +1,300 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ShareCommand />
+<ShareCommand>
+  <Item class="Forguncy.Model.ShareCommandContainer" assembly="Forguncy">
+    <Commands>
+      <Item class="Forguncy.Model.ConditionCommand" assembly="Forguncy">
+        <ConditionAndCommandPairList>
+          <Item class="Forguncy.Model.ConditionAndCommandPair" assembly="Forguncy">
+            <CommandList>
+              <Item class="Forguncy.Model.SetCellPropertyCommand" assembly="Forguncy">
+                <PropertyItemsList>
+                  <Item class="Forguncy.Model.SetCellPropertyItem" assembly="Forguncy">
+                    <Cell>
+                      <ParamReferObject>
+                        <ParamID>cf2f8416-6d84-4253-bce6-8f980a86ac13</ParamID>
+                        <ShareCommandContainerReferObject>
+                          <ShareCommandContainerID>62dcff12-6f0d-442d-9e7f-fa782a9cb175</ShareCommandContainerID>
+                        </ShareCommandContainerReferObject>
+                      </ParamReferObject>
+                      <SerializeProperty />
+                    </Cell>
+                    <PropertyType>IsVisible</PropertyType>
+                    <Value type="System.Boolean">
+                      <Value>False</Value>
+                    </Value>
+                  </Item>
+                  <Item class="Forguncy.Model.SetCellPropertyItem" assembly="Forguncy">
+                    <Cell>
+                      <ParamReferObject>
+                        <ParamID>dc5f2470-3899-4d02-b028-819c6cbe3f4f</ParamID>
+                        <ShareCommandContainerReferObject>
+                          <ShareCommandContainerID>62dcff12-6f0d-442d-9e7f-fa782a9cb175</ShareCommandContainerID>
+                        </ShareCommandContainerReferObject>
+                      </ParamReferObject>
+                      <SerializeProperty />
+                    </Cell>
+                    <PropertyType>IsVisible</PropertyType>
+                    <Value type="System.Boolean">
+                      <Value>False</Value>
+                    </Value>
+                  </Item>
+                </PropertyItemsList>
+              </Item>
+            </CommandList>
+            <Condition class="Forguncy.Model.IfCondition" assembly="Forguncy">
+              <Id>7475a929-894e-4324-ad1d-d9c7aa6b9ed6</Id>
+              <Param class="Forguncy.Model.IfConditionPageElementParam" assembly="Forguncy">
+                <ParamElementCellLocations>
+                  <Item class="Forguncy.Common.FormulaCellLocation" assembly="Forguncy">
+                    <ParamReferObject>
+                      <ParamID>6f18394c-5ac0-4e8a-b7e9-2609da3a94d4</ParamID>
+                      <ShareCommandContainerReferObject>
+                        <ShareCommandContainerID>62dcff12-6f0d-442d-9e7f-fa782a9cb175</ShareCommandContainerID>
+                      </ShareCommandContainerReferObject>
+                    </ParamReferObject>
+                    <SerializeProperty />
+                  </Item>
+                </ParamElementCellLocations>
+              </Param>
+              <Value type="System.String">
+                <Value>1</Value>
+              </Value>
+            </Condition>
+            <ID>991f7288-cde2-4d08-abd1-18b919c8b2e2</ID>
+          </Item>
+          <Item class="Forguncy.Model.ConditionAndCommandPair" assembly="Forguncy">
+            <CommandList>
+              <Item class="Forguncy.Model.SetCellPropertyCommand" assembly="Forguncy">
+                <PropertyItemsList>
+                  <Item class="Forguncy.Model.SetCellPropertyItem" assembly="Forguncy">
+                    <Cell>
+                      <ParamReferObject>
+                        <ParamID>cf2f8416-6d84-4253-bce6-8f980a86ac13</ParamID>
+                        <ShareCommandContainerReferObject>
+                          <ShareCommandContainerID>62dcff12-6f0d-442d-9e7f-fa782a9cb175</ShareCommandContainerID>
+                        </ShareCommandContainerReferObject>
+                      </ParamReferObject>
+                      <SerializeProperty />
+                    </Cell>
+                    <PropertyType>IsVisible</PropertyType>
+                    <Value type="System.Boolean">
+                      <Value>True</Value>
+                    </Value>
+                  </Item>
+                  <Item class="Forguncy.Model.SetCellPropertyItem" assembly="Forguncy">
+                    <Cell>
+                      <ParamReferObject>
+                        <ParamID>dc5f2470-3899-4d02-b028-819c6cbe3f4f</ParamID>
+                        <ShareCommandContainerReferObject>
+                          <ShareCommandContainerID>62dcff12-6f0d-442d-9e7f-fa782a9cb175</ShareCommandContainerID>
+                        </ShareCommandContainerReferObject>
+                      </ParamReferObject>
+                      <SerializeProperty />
+                    </Cell>
+                    <PropertyType>IsVisible</PropertyType>
+                    <Value type="System.Boolean">
+                      <Value>True</Value>
+                    </Value>
+                  </Item>
+                </PropertyItemsList>
+              </Item>
+            </CommandList>
+            <ID>86ac4356-270c-4296-8dee-e2cf19697da4</ID>
+          </Item>
+        </ConditionAndCommandPairList>
+      </Item>
+      <Item class="Forguncy.Model.ConditionCommand" assembly="Forguncy">
+        <ConditionAndCommandPairList>
+          <Item class="Forguncy.Model.ConditionAndCommandPair" assembly="Forguncy">
+            <CommandList>
+              <Item class="Forguncy.Model.SetCellPropertyCommand" assembly="Forguncy">
+                <PropertyItemsList>
+                  <Item class="Forguncy.Model.SetCellPropertyItem" assembly="Forguncy">
+                    <Cell>
+                      <ParamReferObject>
+                        <ParamID>847c0947-9b19-47d9-b37d-c26ff55eec2d</ParamID>
+                        <ShareCommandContainerReferObject>
+                          <ShareCommandContainerID>62dcff12-6f0d-442d-9e7f-fa782a9cb175</ShareCommandContainerID>
+                        </ShareCommandContainerReferObject>
+                      </ParamReferObject>
+                      <SerializeProperty />
+                    </Cell>
+                    <PropertyType>IsVisible</PropertyType>
+                    <Value type="System.Boolean">
+                      <Value>False</Value>
+                    </Value>
+                  </Item>
+                  <Item class="Forguncy.Model.SetCellPropertyItem" assembly="Forguncy">
+                    <Cell>
+                      <ParamReferObject>
+                        <ParamID>ddfd5e99-198b-412f-a904-c88ebea875ef</ParamID>
+                        <ShareCommandContainerReferObject>
+                          <ShareCommandContainerID>62dcff12-6f0d-442d-9e7f-fa782a9cb175</ShareCommandContainerID>
+                        </ShareCommandContainerReferObject>
+                      </ParamReferObject>
+                      <SerializeProperty />
+                    </Cell>
+                    <PropertyType>IsVisible</PropertyType>
+                    <Value type="System.Boolean">
+                      <Value>False</Value>
+                    </Value>
+                  </Item>
+                </PropertyItemsList>
+              </Item>
+            </CommandList>
+            <Condition class="Forguncy.Model.IfCondition" assembly="Forguncy">
+              <Id>5863581f-2320-48a8-8cae-8a7fafa389b4</Id>
+              <Param class="Forguncy.Model.IfConditionPageElementParam" assembly="Forguncy">
+                <ParamElementCellLocations>
+                  <Item class="Forguncy.Common.FormulaCellLocation" assembly="Forguncy">
+                    <ParamReferObject>
+                      <ParamID>6f18394c-5ac0-4e8a-b7e9-2609da3a94d4</ParamID>
+                      <ShareCommandContainerReferObject>
+                        <ShareCommandContainerID>62dcff12-6f0d-442d-9e7f-fa782a9cb175</ShareCommandContainerID>
+                      </ShareCommandContainerReferObject>
+                    </ParamReferObject>
+                    <SerializeProperty />
+                  </Item>
+                </ParamElementCellLocations>
+              </Param>
+              <Value class="Forguncy.Model.FormulaReferObject" assembly="Forguncy">
+                <ParamReferObject>
+                  <ParamID>a5686eab-6ff6-40cd-9a16-07991217a0f5</ParamID>
+                  <ShareCommandContainerReferObject>
+                    <ShareCommandContainerID>62dcff12-6f0d-442d-9e7f-fa782a9cb175</ShareCommandContainerID>
+                  </ShareCommandContainerReferObject>
+                </ParamReferObject>
+              </Value>
+            </Condition>
+            <ID>991f7288-cde2-4d08-abd1-18b919c8b2e2</ID>
+          </Item>
+          <Item class="Forguncy.Model.ConditionAndCommandPair" assembly="Forguncy">
+            <CommandList>
+              <Item class="Forguncy.Model.SetCellPropertyCommand" assembly="Forguncy">
+                <PropertyItemsList>
+                  <Item class="Forguncy.Model.SetCellPropertyItem" assembly="Forguncy">
+                    <Cell>
+                      <ParamReferObject>
+                        <ParamID>847c0947-9b19-47d9-b37d-c26ff55eec2d</ParamID>
+                        <ShareCommandContainerReferObject>
+                          <ShareCommandContainerID>62dcff12-6f0d-442d-9e7f-fa782a9cb175</ShareCommandContainerID>
+                        </ShareCommandContainerReferObject>
+                      </ParamReferObject>
+                      <SerializeProperty />
+                    </Cell>
+                    <PropertyType>IsVisible</PropertyType>
+                    <Value type="System.Boolean">
+                      <Value>True</Value>
+                    </Value>
+                  </Item>
+                  <Item class="Forguncy.Model.SetCellPropertyItem" assembly="Forguncy">
+                    <Cell>
+                      <ParamReferObject>
+                        <ParamID>ddfd5e99-198b-412f-a904-c88ebea875ef</ParamID>
+                        <ShareCommandContainerReferObject>
+                          <ShareCommandContainerID>62dcff12-6f0d-442d-9e7f-fa782a9cb175</ShareCommandContainerID>
+                        </ShareCommandContainerReferObject>
+                      </ParamReferObject>
+                      <SerializeProperty />
+                    </Cell>
+                    <PropertyType>IsVisible</PropertyType>
+                    <Value type="System.Boolean">
+                      <Value>True</Value>
+                    </Value>
+                  </Item>
+                </PropertyItemsList>
+              </Item>
+            </CommandList>
+            <ID>86ac4356-270c-4296-8dee-e2cf19697da4</ID>
+          </Item>
+        </ConditionAndCommandPairList>
+      </Item>
+      <Item class="Forguncy.Model.SetCellPropertyCommand" assembly="Forguncy">
+        <PropertyItemsList>
+          <Item class="Forguncy.Model.SetCellPropertyItem" assembly="Forguncy">
+            <Cell>
+              <ParamReferObject>
+                <ParamID>8324f69a-de73-4a10-9af8-34a67c96b133</ParamID>
+                <ShareCommandContainerReferObject>
+                  <ShareCommandContainerID>62dcff12-6f0d-442d-9e7f-fa782a9cb175</ShareCommandContainerID>
+                </ShareCommandContainerReferObject>
+              </ParamReferObject>
+              <SerializeProperty />
+            </Cell>
+            <Value class="Forguncy.Model.FormulaReferObject" assembly="Forguncy">
+              <ParamReferObject>
+                <ParamID>5fa46e12-3bf5-4eb9-acd7-c43b08a43936</ParamID>
+                <ShareCommandContainerReferObject>
+                  <ShareCommandContainerID>62dcff12-6f0d-442d-9e7f-fa782a9cb175</ShareCommandContainerID>
+                </ShareCommandContainerReferObject>
+              </ParamReferObject>
+            </Value>
+          </Item>
+          <Item class="Forguncy.Model.SetCellPropertyItem" assembly="Forguncy">
+            <Cell>
+              <ParamReferObject>
+                <ParamID>b29fe499-5630-4ba5-a2f1-90861c8b3732</ParamID>
+                <ShareCommandContainerReferObject>
+                  <ShareCommandContainerID>62dcff12-6f0d-442d-9e7f-fa782a9cb175</ShareCommandContainerID>
+                </ShareCommandContainerReferObject>
+              </ParamReferObject>
+              <SerializeProperty />
+            </Cell>
+            <Value class="Forguncy.Model.FormulaReferObject" assembly="Forguncy">
+              <ParamReferObject>
+                <ParamID>bf4313df-fd7b-4d48-b27f-f6d0aac7d6f7</ParamID>
+                <ShareCommandContainerReferObject>
+                  <ShareCommandContainerID>62dcff12-6f0d-442d-9e7f-fa782a9cb175</ShareCommandContainerID>
+                </ShareCommandContainerReferObject>
+              </ParamReferObject>
+            </Value>
+          </Item>
+        </PropertyItemsList>
+      </Item>
+    </Commands>
+    <ID>62dcff12-6f0d-442d-9e7f-fa782a9cb175</ID>
+    <Name>ヘルプページ遷移</Name>
+    <Params>
+      <Item class="Forguncy.Model.ShareCommandParam" assembly="Forguncy">
+        <ID>6f18394c-5ac0-4e8a-b7e9-2609da3a94d4</ID>
+        <Name>ページ番号</Name>
+      </Item>
+      <Item class="Forguncy.Model.ShareCommandParam" assembly="Forguncy">
+        <ID>a5686eab-6ff6-40cd-9a16-07991217a0f5</ID>
+        <Name>最大ページ数</Name>
+      </Item>
+      <Item class="Forguncy.Model.ShareCommandParam" assembly="Forguncy">
+        <ID>8324f69a-de73-4a10-9af8-34a67c96b133</ID>
+        <Name>画像</Name>
+      </Item>
+      <Item class="Forguncy.Model.ShareCommandParam" assembly="Forguncy">
+        <ID>b29fe499-5630-4ba5-a2f1-90861c8b3732</ID>
+        <Name>説明</Name>
+      </Item>
+      <Item class="Forguncy.Model.ShareCommandParam" assembly="Forguncy">
+        <ID>cf2f8416-6d84-4253-bce6-8f980a86ac13</ID>
+        <Name>前へ画像</Name>
+      </Item>
+      <Item class="Forguncy.Model.ShareCommandParam" assembly="Forguncy">
+        <ID>dc5f2470-3899-4d02-b028-819c6cbe3f4f</ID>
+        <Name>前へ文字</Name>
+      </Item>
+      <Item class="Forguncy.Model.ShareCommandParam" assembly="Forguncy">
+        <ID>847c0947-9b19-47d9-b37d-c26ff55eec2d</ID>
+        <Name>次へ画像</Name>
+      </Item>
+      <Item class="Forguncy.Model.ShareCommandParam" assembly="Forguncy">
+        <ID>ddfd5e99-198b-412f-a904-c88ebea875ef</ID>
+        <Name>次へ文字</Name>
+      </Item>
+      <Item class="Forguncy.Model.ShareCommandParam" assembly="Forguncy">
+        <ID>5fa46e12-3bf5-4eb9-acd7-c43b08a43936</ID>
+        <Name>置き換え画像</Name>
+      </Item>
+      <Item class="Forguncy.Model.ShareCommandParam" assembly="Forguncy">
+        <ID>bf4313df-fd7b-4d48-b27f-f6d0aac7d6f7</ID>
+        <Name>置き換え説明</Name>
+      </Item>
+    </Params>
+  </Item>
+</ShareCommand>

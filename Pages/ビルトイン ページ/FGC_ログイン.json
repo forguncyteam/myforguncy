@@ -1,26 +1,33 @@
 {
   "Rows": {
-    "Count": 27
+    "Sizes": {
+      "15": 10.0,
+      "19": 10.0,
+      "24": 15.0,
+      "28": 10.0,
+      "29": 15.0,
+      "30": 10.0,
+      "31": 15.0
+    },
+    "Count": 37
   },
   "Cols": {
-    "Sizes": {
-      "4": 10.0,
-      "5": 10.0
-    },
-    "Count": 19
+    "Count": 56
   },
   "Values": {
-    "7,0": "Forguncyアプリケーション",
-    "18,3": "ログイン",
-    "21,3": "パスワードを忘れた場合",
-    "23,1": "Administratorアカウント：Administrator\nパスワード：123456",
-    "25,1": "管理者から付与されたアカウントを使用してログインすることができます。"
+    "13,21": "ユーザー名",
+    "17,21": "パスワード",
+    "23,21": "ログイン",
+    "26,21": "パスワードを忘れた場合",
+    "28,19": "Administratorアカウント",
+    "28,29": "Administrator",
+    "30,21": "パスワード",
+    "30,29": 123456
   },
   "AttachInfos": {
-    "2,4": {
+    "5,21": {
       "CellType": {
         "$type": "Forguncy.ImageCellType, Forguncy",
-        "TemplateKey": "_RS_Normal1",
         "UIPermissions": [
           {
             "Scope": 2,
@@ -35,10 +42,10 @@
             ]
           }
         ],
-        "ImagePath": "fgc_logo_dark.png"
+        "ImagePath": "fgc_logo_light.png"
       }
     },
-    "10,3": {
+    "14,21": {
       "CellType": {
         "$type": "Forguncy.TextCellType, Forguncy",
         "SavedValidators": [
@@ -49,11 +56,9 @@
         "Icon": {
           "Name": "Navigation/169_user_2.svg",
           "BuiltIn": true,
-          "Color": "#FF7F7F7F"
+          "Color": "Text 1 50"
         },
-        "IconSize": 18.0,
-        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
-        "WaterMark": "ユーザー名",
+        "TemplateKey": "_RS_LargeRoundCorner_LightTheme_Normal3",
         "UIPermissions": [
           {
             "Scope": 2,
@@ -80,7 +85,7 @@
         "SelectedDefaultRegularExpression": ""
       }
     },
-    "13,3": {
+    "18,21": {
       "CellType": {
         "$type": "Forguncy.TextCellType, Forguncy",
         "ShowPassword": true,
@@ -92,11 +97,9 @@
         "Icon": {
           "Name": "Application/078_lock_1.svg",
           "BuiltIn": true,
-          "Color": "#FF7F7F7F"
+          "Color": "Text 1 50"
         },
-        "IconSize": 18.0,
-        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
-        "WaterMark": "パスワード",
+        "TemplateKey": "_RS_LargeRoundCorner_LightTheme_Normal3",
         "UIPermissions": [
           {
             "Scope": 2,
@@ -123,7 +126,7 @@
         "SelectedDefaultRegularExpression": ""
       }
     },
-    "16,3": {
+    "21,21": {
       "CellType": {
         "$type": "Forguncy.CheckBoxCellType, Forguncy",
         "Caption": "ログインしたままにする",
@@ -145,12 +148,12 @@
         "ForguncyAttribute": "LogIn_RememberMe"
       }
     },
-    "18,3": {
+    "23,21": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, Forguncy",
         "Text": "ログイン",
         "AutoExecute": true,
-        "TemplateKey": "_RS_Normal_Style2",
+        "TemplateKey": "_RS_RoundCorner_Style2",
         "UIPermissions": [
           {
             "Scope": 2,
@@ -168,17 +171,19 @@
         "ForguncyAttribute": "LogIn_Button"
       }
     },
-    "21,3": {
+    "26,21": {
       "CellType": {
         "$type": "Forguncy.HyperlinkCellType, Forguncy",
         "CommandList": [
           {
             "$type": "Forguncy.Model.NavigateCommand, Forguncy",
-            "PageName": "FGC_パスワードを忘れた場合_モバイル",
+            "PageName": "FGC_パスワードを忘れた場合",
             "PassValues": []
           }
         ],
         "Text": "パスワードを忘れた場合",
+        "ClickMode": 1,
+        "TemplateKey": "FGC_Style5",
         "UIPermissions": [
           {
             "Scope": 2,
@@ -199,110 +204,111 @@
   "StyleDatas": {
     "Styles": [
       {
-        "FontSize": 13.333333015441895,
-        "Foreground": 0
+        "Formatter": 0
       },
       {
-        "FontSize": 21.333333969116211,
         "Foreground": 1,
-        "Formatter": 2,
-        "HorizontalAlignment": 3,
-        "VerticalAlignment": 4
+        "Formatter": 0
+      },
+      {
+        "Formatter": 2
+      },
+      {
+        "Foreground": 1,
+        "HorizontalAlignment": 3
+      },
+      {
+        "Foreground": 4,
+        "HorizontalAlignment": 5,
+        "Underline": true
       },
       {
         "FontSize": 13.333333015441895,
-        "Formatter": 5,
-        "Underline": false,
-        "Strikethrough": false
+        "Foreground": 1,
+        "HorizontalAlignment": 6
       },
       {
         "FontSize": 13.333333015441895,
-        "Foreground": 6
-      },
-      {
-        "FontSize": 16.0,
-        "FontWeight": 7,
-        "Formatter": 2,
-        "Underline": false,
-        "Strikethrough": false
+        "Foreground": 1
       },
       {
         "FontSize": 13.333333015441895,
-        "Foreground": 8,
-        "Formatter": 2,
-        "HorizontalAlignment": 3,
-        "Underline": true,
-        "Strikethrough": false
-      },
-      {
-        "FontSize": 13.333333015441895,
-        "Foreground": 6,
-        "Formatter": 2,
-        "HorizontalAlignment": 3,
-        "Underline": false,
-        "Strikethrough": false
-      },
-      {
-        "FontSize": 12.0,
-        "Foreground": 6,
-        "Formatter": 2,
-        "HorizontalAlignment": 3,
-        "WordWrap": true
+        "Foreground": 1,
+        "HorizontalAlignment": 3
       }
     ],
     "Types": {
       "Strs": [
-        "#FF000000",
-        "Accent 1 -50",
         "[AUTO]General",
-        "Center",
-        "Top",
+        "Text 1 35",
         "@",
-        "#FF7F7F7F",
-        "Bold",
-        "#FF538BD5",
+        "Left",
+        "Accent 1 0",
+        "Center",
+        "Right",
         "Body"
       ]
     },
     "CellStyles": {
-      "2,4": 0,
-      "7,0": 1,
-      "10,3": 2,
-      "13,3": 2,
-      "16,3": 3,
-      "18,3": 4,
-      "21,3": 5,
-      "22,3": 5,
-      "23,1": 6,
-      "25,1": 7
+      "0,0": 0,
+      "13,21": 1,
+      "14,21": 2,
+      "17,21": 1,
+      "18,21": 2,
+      "21,21": 3,
+      "26,21": 4,
+      "28,19": 5,
+      "28,29": 6,
+      "30,21": 5,
+      "30,29": 7
     },
     "SheetStyle": {
-      "FontFamily": 9,
-      "Underline": false,
-      "Strikethrough": false
+      "FontFamily": 7
     }
   },
   "Spans": [
-    "7,0,2,19",
-    "16,3,1,13",
-    "25,1,2,17",
-    "10,3,2,13",
-    "13,3,2,13",
-    "2,4,4,11",
-    "18,3,2,13",
-    "23,1,2,17",
-    "21,3,1,13"
+    "5,21,4,14",
+    "14,21,2,14",
+    "18,21,2,14",
+    "23,21,2,14",
+    "28,29,2,6",
+    "30,29,2,6",
+    "28,19,2,9",
+    "30,21,2,7",
+    "26,21,1,14",
+    "21,21,1,14"
+  ],
+  "BackgroundPictures": [
+    {
+      "FitToBrowserWidth": true,
+      "FitToBrowserHeight": true,
+      "ForguncyPictureName": "PCLoginBackground",
+      "Stretch": 3,
+      "ForguncyPictureSourceType": 2,
+      "Name": "d7c41f6d-8542-49f9-a003-8fb0bd9de009.png",
+      "Size": "1120,685"
+    },
+    {
+      "StyleInfo": {
+        "CornerRadius": 8.4375,
+        "Fill": "#FFFFFFFF"
+      },
+      "IsAutomaticFill": false,
+      "Name": "BackgroundPicture0",
+      "Location": "380,220",
+      "Size": "360,385"
+    }
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, Forguncy",
+    "MobilePageName": "FGC_ログイン_モバイル",
     "Title": "ログイン",
     "AuthorizeInfo": {
       "VisitMode": 2
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "IsBuiltInPage": true,
-    "IsMobilePage": true
+    "IsBuiltInPage": true
   },
   "PrintInfo": {
     "Margin": {},

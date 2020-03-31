@@ -1,197 +1,124 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TableSet>
+  <Relations>
+    <Item class="Forguncy.ForeignkeyInfomation" assembly="ForguncyDataAccess">
+      <ForeignColumn>業者ID</ForeignColumn>
+      <ForeignTable>発注先マスタ</ForeignTable>
+      <IsDetailTableRelation>False</IsDetailTableRelation>
+      <PrimaryColumn>ID</PrimaryColumn>
+      <PrimaryTable>業者マスタ</PrimaryTable>
+      <RelationTypeOnDelete>None</RelationTypeOnDelete>
+      <RelationTypeOnUpdate>None</RelationTypeOnUpdate>
+    </Item>
+    <Item class="Forguncy.ForeignkeyInfomation" assembly="ForguncyDataAccess">
+      <ForeignColumn>原材料ID</ForeignColumn>
+      <ForeignTable>発注先マスタ</ForeignTable>
+      <IsDetailTableRelation>False</IsDetailTableRelation>
+      <PrimaryColumn>ID</PrimaryColumn>
+      <PrimaryTable>原材料マスタ</PrimaryTable>
+      <RelationTypeOnDelete>None</RelationTypeOnDelete>
+      <RelationTypeOnUpdate>None</RelationTypeOnUpdate>
+    </Item>
+    <Item class="Forguncy.ForeignkeyInfomation" assembly="ForguncyDataAccess">
+      <ForeignColumn>店舗ID</ForeignColumn>
+      <ForeignTable>発注先マスタ</ForeignTable>
+      <IsDetailTableRelation>False</IsDetailTableRelation>
+      <PrimaryColumn>ID</PrimaryColumn>
+      <PrimaryTable>店舗マスタ</PrimaryTable>
+      <RelationTypeOnDelete>None</RelationTypeOnDelete>
+      <RelationTypeOnUpdate>None</RelationTypeOnUpdate>
+    </Item>
+    <Item class="Forguncy.ForeignkeyInfomation" assembly="ForguncyDataAccess">
+      <ForeignColumn>納品日ID</ForeignColumn>
+      <ForeignTable>発注管理テーブル</ForeignTable>
+      <IsDetailTableRelation>False</IsDetailTableRelation>
+      <PrimaryColumn>ID</PrimaryColumn>
+      <PrimaryTable>納品日テーブル</PrimaryTable>
+      <RelationTypeOnDelete>None</RelationTypeOnDelete>
+      <RelationTypeOnUpdate>None</RelationTypeOnUpdate>
+    </Item>
+    <Item class="Forguncy.ForeignkeyInfomation" assembly="ForguncyDataAccess">
+      <ForeignColumn>業者ID</ForeignColumn>
+      <ForeignTable>発注管理テーブル</ForeignTable>
+      <IsDetailTableRelation>False</IsDetailTableRelation>
+      <PrimaryColumn>ID</PrimaryColumn>
+      <PrimaryTable>業者マスタ</PrimaryTable>
+      <RelationTypeOnDelete>None</RelationTypeOnDelete>
+      <RelationTypeOnUpdate>None</RelationTypeOnUpdate>
+    </Item>
+    <Item class="Forguncy.ForeignkeyInfomation" assembly="ForguncyDataAccess">
+      <ForeignColumn>原材料ID</ForeignColumn>
+      <ForeignTable>発注管理テーブル</ForeignTable>
+      <IsDetailTableRelation>False</IsDetailTableRelation>
+      <PrimaryColumn>ID</PrimaryColumn>
+      <PrimaryTable>原材料マスタ</PrimaryTable>
+      <RelationTypeOnDelete>None</RelationTypeOnDelete>
+      <RelationTypeOnUpdate>None</RelationTypeOnUpdate>
+    </Item>
+    <Item class="Forguncy.ForeignkeyInfomation" assembly="ForguncyDataAccess">
+      <ForeignColumn>納品日ID</ForeignColumn>
+      <ForeignTable>納品ビュー</ForeignTable>
+      <IsDetailTableRelation>False</IsDetailTableRelation>
+      <PrimaryColumn>ID</PrimaryColumn>
+      <PrimaryTable>納品日テーブル</PrimaryTable>
+      <RelationTypeOnDelete>None</RelationTypeOnDelete>
+      <RelationTypeOnUpdate>None</RelationTypeOnUpdate>
+    </Item>
+    <Item class="Forguncy.ForeignkeyInfomation" assembly="ForguncyDataAccess">
+      <ForeignColumn>店舗ID</ForeignColumn>
+      <ForeignTable>納品ビュー</ForeignTable>
+      <IsDetailTableRelation>False</IsDetailTableRelation>
+      <PrimaryColumn>ID</PrimaryColumn>
+      <PrimaryTable>店舗マスタ</PrimaryTable>
+      <RelationTypeOnDelete>None</RelationTypeOnDelete>
+      <RelationTypeOnUpdate>None</RelationTypeOnUpdate>
+    </Item>
+    <Item class="Forguncy.ForeignkeyInfomation" assembly="ForguncyDataAccess">
+      <ForeignColumn>業者ID</ForeignColumn>
+      <ForeignTable>納品ビュー</ForeignTable>
+      <IsDetailTableRelation>False</IsDetailTableRelation>
+      <PrimaryColumn>ID</PrimaryColumn>
+      <PrimaryTable>業者マスタ</PrimaryTable>
+      <RelationTypeOnDelete>None</RelationTypeOnDelete>
+      <RelationTypeOnUpdate>None</RelationTypeOnUpdate>
+    </Item>
+    <Item class="Forguncy.ForeignkeyInfomation" assembly="ForguncyDataAccess">
+      <ForeignColumn>店舗ID</ForeignColumn>
+      <ForeignTable>発注管理テーブル</ForeignTable>
+      <IsDetailTableRelation>False</IsDetailTableRelation>
+      <PrimaryColumn>ID</PrimaryColumn>
+      <PrimaryTable>店舗マスタ</PrimaryTable>
+      <RelationTypeOnDelete>None</RelationTypeOnDelete>
+      <RelationTypeOnUpdate>None</RelationTypeOnUpdate>
+    </Item>
+  </Relations>
   <Tables>
     <Item class="Forguncy.Model.Tables.Table" assembly="Forguncy">
       <Columns>
         <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
           <AutoIncrement>True</AutoIncrement>
-          <ColumnType>System.Int32</ColumnType>
-          <DatabaseColumnType>int</DatabaseColumnType>
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
           <MaxLength>-1</MaxLength>
           <Name>ID</Name>
-          <ReadOnly>True</ReadOnly>
           <Required>True</Required>
           <Unique>True</Unique>
         </Item>
         <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.DateTime</ColumnType>
-          <DatabaseColumnType>datetime</DatabaseColumnType>
-          <MaxLength>-1</MaxLength>
-          <Name>出発日</Name>
-        </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.DateTime</ColumnType>
-          <DatabaseColumnType>datetime</DatabaseColumnType>
-          <MaxLength>-1</MaxLength>
-          <Name>帰着日</Name>
+          <ColumnType>System.String</ColumnType>
+          <Name>品目</Name>
         </Item>
         <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
           <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>nvarchar</DatabaseColumnType>
-          <MaxLength>4000</MaxLength>
-          <Name>出発時刻</Name>
+          <Name>品名</Name>
         </Item>
         <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
           <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>nvarchar</DatabaseColumnType>
-          <MaxLength>4000</MaxLength>
-          <Name>帰着時刻</Name>
-        </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.Int32</ColumnType>
-          <DatabaseColumnType>int</DatabaseColumnType>
-          <MaxLength>-1</MaxLength>
-          <Name>日数</Name>
+          <Name>単位</Name>
         </Item>
         <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
           <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>nvarchar</DatabaseColumnType>
-          <MaxLength>4000</MaxLength>
           <Name>備考</Name>
-        </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>nvarchar</DatabaseColumnType>
-          <MaxLength>4000</MaxLength>
-          <Name>出張目的</Name>
-        </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>nvarchar</DatabaseColumnType>
-          <MaxLength>4000</MaxLength>
-          <Name>出張先</Name>
-        </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>nvarchar</DatabaseColumnType>
-          <MaxLength>4000</MaxLength>
-          <Name>期間1</Name>
-        </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>nvarchar</DatabaseColumnType>
-          <MaxLength>4000</MaxLength>
-          <Name>訪問先1</Name>
-        </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>nvarchar</DatabaseColumnType>
-          <MaxLength>4000</MaxLength>
-          <Name>要件1</Name>
-        </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>nvarchar</DatabaseColumnType>
-          <MaxLength>4000</MaxLength>
-          <Name>連絡先1</Name>
-        </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>nvarchar</DatabaseColumnType>
-          <MaxLength>4000</MaxLength>
-          <Name>期間2</Name>
-        </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>nvarchar</DatabaseColumnType>
-          <MaxLength>4000</MaxLength>
-          <Name>訪問先2</Name>
-        </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>nvarchar</DatabaseColumnType>
-          <MaxLength>4000</MaxLength>
-          <Name>要件2</Name>
-        </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>nvarchar</DatabaseColumnType>
-          <MaxLength>4000</MaxLength>
-          <Name>連絡先2</Name>
-        </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>nvarchar</DatabaseColumnType>
-          <MaxLength>4000</MaxLength>
-          <Name>期間3</Name>
-        </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>nvarchar</DatabaseColumnType>
-          <MaxLength>4000</MaxLength>
-          <Name>訪問先3</Name>
-        </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>nvarchar</DatabaseColumnType>
-          <MaxLength>4000</MaxLength>
-          <Name>要件3</Name>
-        </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>nvarchar</DatabaseColumnType>
-          <MaxLength>4000</MaxLength>
-          <Name>連絡先3</Name>
-        </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>nvarchar</DatabaseColumnType>
-          <MaxLength>4000</MaxLength>
-          <Name>期間4</Name>
-        </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>nvarchar</DatabaseColumnType>
-          <MaxLength>4000</MaxLength>
-          <Name>訪問先4</Name>
-        </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>nvarchar</DatabaseColumnType>
-          <MaxLength>4000</MaxLength>
-          <Name>要件4</Name>
-        </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>nvarchar</DatabaseColumnType>
-          <MaxLength>4000</MaxLength>
-          <Name>連絡先4</Name>
-        </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>nvarchar</DatabaseColumnType>
-          <MaxLength>4000</MaxLength>
-          <Name>期間5</Name>
-        </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>nvarchar</DatabaseColumnType>
-          <MaxLength>4000</MaxLength>
-          <Name>訪問先5</Name>
-        </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>nvarchar</DatabaseColumnType>
-          <MaxLength>4000</MaxLength>
-          <Name>要件5</Name>
-        </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>nvarchar</DatabaseColumnType>
-          <MaxLength>4000</MaxLength>
-          <Name>連絡先5</Name>
-        </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>nvarchar</DatabaseColumnType>
-          <MaxLength>4000</MaxLength>
-          <Name>FGC_AssignTo</Name>
-        </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>nvarchar</DatabaseColumnType>
-          <MaxLength>4000</MaxLength>
-          <Name>FGC_State</Name>
         </Item>
         <Item class="Forguncy.Model.Tables.UserExtraBingingColumn" assembly="Forguncy">
           <ColumnType>System.String</ColumnType>
@@ -209,872 +136,8 @@
           <ColumnType>System.DateTime</ColumnType>
           <Name>FGC_LastModifyDate</Name>
         </Item>
-        <Item class="Forguncy.Model.Tables.FormulaColumn" assembly="Forguncy">
-          <ColumnType>System.Object</ColumnType>
-          <Formula>CONCATENATE(YEAR([出発日]),"-", if(MONTH([出発日])&lt;10,CONCATENATE("0",MONTH([出発日])),CONCATENATE(MONTH([出発日]),"")), "-", if(DAY([出発日])&lt;10,CONCATENATE("0",DAY([出発日])),CONCATENATE(DAY([出発日]),"")), " ", [出発時刻])</Formula>
-          <Name>FromDateTime</Name>
-        </Item>
-        <Item class="Forguncy.Model.Tables.FormulaColumn" assembly="Forguncy">
-          <ColumnType>System.Object</ColumnType>
-          <Formula>CONCATENATE(YEAR([帰着日]),"-", if(MONTH([帰着日])&lt;10,CONCATENATE("0",MONTH([帰着日])),CONCATENATE(MONTH([帰着日]),"")), "-", if(DAY([帰着日])&lt;10,CONCATENATE("0",DAY([帰着日])),CONCATENATE(DAY([帰着日]),"")), " ", [帰着時刻])</Formula>
-          <Name>ToDateTime</Name>
-        </Item>
       </Columns>
-      <FlowProcess>
-        <FlowPaths>
-          <Item class="Forguncy.Model.FlowProcessPath" assembly="Forguncy">
-            <Action>
-              <ActionName>提出</ActionName>
-              <GUID>11bb12f8-79ab-4417-b8cb-3cdab9cbc11d</GUID>
-            </Action>
-            <Assignees>
-              <Item class="Forguncy.Model.FlowProcessRole" assembly="CommonUtilities">
-                <FlowProcessRoleType>None</FlowProcessRoleType>
-                <Name>(None)</Name>
-              </Item>
-            </Assignees>
-            <Commands>
-              <CommandList>
-                <Item class="Forguncy.Model.NavigateCommand" assembly="Forguncy">
-                  <PageName>businesstriplist</PageName>
-                </Item>
-              </CommandList>
-              <GUID>6366ee9c-4689-4e9e-9d4c-943fa66956e8</GUID>
-            </Commands>
-            <Condition class="ForguncyDataAccess.RelationSqlCondition" assembly="ForguncyDataAccess">
-              <Condition1 class="ForguncyDataAccess.TextCESqlCondition" assembly="ForguncyDataAccess">
-                <ColumnBindingInfo>
-                  <AttachType class="ForguncyDataAccess.UserColumnAttachObj" assembly="ForguncyDataAccess">
-                    <AttachTypeTag />
-                    <UserColumnAttachType>Role</UserColumnAttachType>
-                  </AttachType>
-                  <ColumnName>FGC_Creator</ColumnName>
-                  <TableName>出張申請</TableName>
-                </ColumnBindingInfo>
-                <CompareType>Contains</CompareType>
-                <Id>9e67a11c-6d50-4925-b45d-135fcc01c190</Id>
-                <Value type="System.String">
-                  <Value>リーダー</Value>
-                </Value>
-              </Condition1>
-              <Condition2 class="ForguncyDataAccess.GeneralCESqlCondition" assembly="ForguncyDataAccess">
-                <ColumnBindingInfo>
-                  <ColumnName>日数</ColumnName>
-                  <TableName>出張申請</TableName>
-                </ColumnBindingInfo>
-                <CompareType>LessThanOrEqualsTo</CompareType>
-                <Id>89972105-d9d0-43d2-a912-ed9ce783b69c</Id>
-                <Value type="System.String">
-                  <Value>2</Value>
-                </Value>
-              </Condition2>
-              <Id>ce2f1d05-255f-489d-bcf2-877b7c46facb</Id>
-              <RelationType>And</RelationType>
-            </Condition>
-            <StartState>
-              <Id>c99516bf-4dc1-4396-a4b3-2506f01610c0</Id>
-              <StateName>新規</StateName>
-            </StartState>
-            <ToState>
-              <Id>8155b265-be12-42fd-a024-f701763ca751</Id>
-              <StateName>承認済</StateName>
-            </ToState>
-          </Item>
-          <Item class="Forguncy.Model.FlowProcessPath" assembly="Forguncy">
-            <Action>
-              <ActionName>提出</ActionName>
-              <GUID>11bb12f8-79ab-4417-b8cb-3cdab9cbc11d</GUID>
-            </Action>
-            <Assignees>
-              <Item class="Forguncy.Model.FlowProcessRole" assembly="CommonUtilities">
-                <FilterBy>
-                  <FilterByType>CurrentUser</FilterByType>
-                </FilterBy>
-                <FlowProcessRoleType>Group</FlowProcessRoleType>
-                <Name>部長</Name>
-              </Item>
-            </Assignees>
-            <Commands>
-              <CommandList>
-                <Item class="Forguncy.Model.NavigateCommand" assembly="Forguncy">
-                  <PageName>businesstriplist</PageName>
-                </Item>
-              </CommandList>
-              <GUID>1f6f0d88-c3c0-45c0-af1a-99d37e23c5a5</GUID>
-            </Commands>
-            <Condition class="ForguncyDataAccess.RelationSqlCondition" assembly="ForguncyDataAccess">
-              <Condition1 class="ForguncyDataAccess.TextCESqlCondition" assembly="ForguncyDataAccess">
-                <ColumnBindingInfo>
-                  <AttachType class="ForguncyDataAccess.UserColumnAttachObj" assembly="ForguncyDataAccess">
-                    <AttachTypeTag />
-                    <UserColumnAttachType>Role</UserColumnAttachType>
-                  </AttachType>
-                  <ColumnName>FGC_Creator</ColumnName>
-                  <TableName>出張申請</TableName>
-                </ColumnBindingInfo>
-                <CompareType>Contains</CompareType>
-                <Id>6cc2970b-ba26-4417-9df3-d24c5b0f7a43</Id>
-                <Value type="System.String">
-                  <Value>リーダー</Value>
-                </Value>
-              </Condition1>
-              <Condition2 class="ForguncyDataAccess.GeneralCESqlCondition" assembly="ForguncyDataAccess">
-                <ColumnBindingInfo>
-                  <ColumnName>日数</ColumnName>
-                  <TableName>出張申請</TableName>
-                </ColumnBindingInfo>
-                <CompareType>GreaterThan</CompareType>
-                <Id>ed6416c7-e3d8-473c-bbe9-e3e4030d4af6</Id>
-                <Value type="System.String">
-                  <Value>2</Value>
-                </Value>
-              </Condition2>
-              <Id>6b2e35c4-b52c-428b-b4dc-3875fa9bf08a</Id>
-              <RelationType>And</RelationType>
-            </Condition>
-            <StartState>
-              <Id>c99516bf-4dc1-4396-a4b3-2506f01610c0</Id>
-              <StateName>新規</StateName>
-            </StartState>
-            <ToState>
-              <Id>b16dc637-4421-452d-a93d-d58f82830e3d</Id>
-              <Notification>
-                <CommandList>
-                  <Item class="Forguncy.Model.SendMailCommand" assembly="Forguncy">
-                    <Comments Base64="+lF6duVlbjAxAOVlTVJ+MGcwazB/Yo2K5lEGdEwwTIiPMIwwZjBEMGowRDA0WAhUazDhMPww6zBMMAGQiTCMMH4wWTACMA0ACgCFUblbbzBpkEJm+GZNMNtjSDBmMClSKHVXMGYwTzBgMFUwRDACMA==" />
-                    <Content type="System.String">
-                      <Value Base64="WwAlAEMAdQByAHIAZQBuAHQAUgBvAHcAPQAoAPpRNV8zdcuKLADFYlNfBYApACUAXQDYaQ0ACgANAAoA+lE1X39ijYq3MLkwxjDgMGswATAfZ1CWbjDrj2MwZjBEMIswM3XLikwwQjCKMH4wWTACMA0ACgDlTgtObjDqMPMwrzCIMIow+lE1X39ijYq3MLkwxjDgMGsw7TCwMKQw8zBXMGYwATB/Yo2K5lEGdJIwTIhjMGYwTzBgMFUwRDACMA0ACgANAAoAWwAlAFAAYQBnAGUATgBhAHYAaQBnAGEAdABlAD0AKABoAG8AbQBlACwA+lE1X39ijYq3MLkwxjDgMCkAJQBdAA0ACgA=" />
-                    </Content>
-                    <From type="System.String">
-                      <Value>example@example.com</Value>
-                    </From>
-                    <Recipient type="System.String">
-                      <Value>%AssignTo%</Value>
-                    </Recipient>
-                    <Subject type="System.String">
-                      <Value>［出張承認］期限の迫っている申請</Value>
-                    </Subject>
-                  </Item>
-                </CommandList>
-                <DeadlineLimitationSetting>
-                  <AfterRecordCreated>
-                    <TimeCount>10</TimeCount>
-                  </AfterRecordCreated>
-                  <ColumnName>出発日</ColumnName>
-                  <DeadlineLimitationType>DataColumn</DeadlineLimitationType>
-                </DeadlineLimitationSetting>
-                <DeadlineNotificationSetting>
-                  <BeforeDeadLineTime>
-                    <TimeCount>1</TimeCount>
-                    <TimeUnitType>Day</TimeUnitType>
-                  </BeforeDeadLineTime>
-                  <IsNeedNotification>True</IsNeedNotification>
-                  <RepeatNotificationTimeInterval>
-                    <TimeCount>1</TimeCount>
-                  </RepeatNotificationTimeInterval>
-                </DeadlineNotificationSetting>
-              </Notification>
-              <StateName>部長承認申請中</StateName>
-            </ToState>
-          </Item>
-          <Item class="Forguncy.Model.FlowProcessPath" assembly="Forguncy">
-            <Action>
-              <ActionName>提出</ActionName>
-              <GUID>11bb12f8-79ab-4417-b8cb-3cdab9cbc11d</GUID>
-            </Action>
-            <Assignees>
-              <Item class="Forguncy.Model.FlowProcessRole" assembly="CommonUtilities">
-                <FlowProcessRoleType>None</FlowProcessRoleType>
-                <Name>(None)</Name>
-              </Item>
-            </Assignees>
-            <Commands>
-              <CommandList>
-                <Item class="Forguncy.Model.NavigateCommand" assembly="Forguncy">
-                  <PageName>businesstriplist</PageName>
-                </Item>
-              </CommandList>
-              <GUID>e84070b1-6b32-4971-8086-81ae99dd36bc</GUID>
-            </Commands>
-            <Condition class="ForguncyDataAccess.TextCESqlCondition" assembly="ForguncyDataAccess">
-              <ColumnBindingInfo>
-                <AttachType class="ForguncyDataAccess.UserColumnAttachObj" assembly="ForguncyDataAccess">
-                  <AttachTypeTag />
-                  <UserColumnAttachType>Role</UserColumnAttachType>
-                </AttachType>
-                <ColumnName>FGC_Creator</ColumnName>
-                <TableName>出張申請</TableName>
-              </ColumnBindingInfo>
-              <CompareType>Contains</CompareType>
-              <Id>de0c2dad-84e6-4e21-8898-9b738caaa9e3</Id>
-              <Value type="System.String">
-                <Value>部長</Value>
-              </Value>
-            </Condition>
-            <StartState>
-              <Id>c99516bf-4dc1-4396-a4b3-2506f01610c0</Id>
-              <StateName>新規</StateName>
-            </StartState>
-            <ToState>
-              <Id>8155b265-be12-42fd-a024-f701763ca751</Id>
-              <StateName>承認済</StateName>
-            </ToState>
-          </Item>
-          <Item class="Forguncy.Model.FlowProcessPath" assembly="Forguncy">
-            <Action>
-              <ActionName>提出</ActionName>
-              <GUID>11bb12f8-79ab-4417-b8cb-3cdab9cbc11d</GUID>
-            </Action>
-            <Assignees>
-              <Item class="Forguncy.Model.FlowProcessRole" assembly="CommonUtilities">
-                <FilterBy>
-                  <FilterByType>CurrentUser</FilterByType>
-                </FilterBy>
-                <FlowProcessRoleType>Group</FlowProcessRoleType>
-                <Name>リーダー</Name>
-              </Item>
-            </Assignees>
-            <Commands>
-              <CommandList>
-                <Item class="Forguncy.Model.NavigateCommand" assembly="Forguncy">
-                  <PageName>businesstriplist</PageName>
-                </Item>
-              </CommandList>
-              <GUID>dc3038ae-61a7-43d8-9677-130c627e37c9</GUID>
-            </Commands>
-            <StartState>
-              <Id>c99516bf-4dc1-4396-a4b3-2506f01610c0</Id>
-              <StateName>新規</StateName>
-            </StartState>
-            <ToState>
-              <Id>fc842af0-02ed-4c8a-b9eb-4811f4d3167f</Id>
-              <Notification>
-                <CommandList>
-                  <Item class="Forguncy.Model.SendMailCommand" assembly="Forguncy">
-                    <Comments Base64="+lF6duVlbjAxAOVlTVJ+MGcwazB/Yo2K5lEGdEwwTIiPMIwwZjBEMGowRDA0WAhUazDhMPww6zBMMAGQiTCMMH4wWTACMA0ACgCFUblbbzBpkEJm+GZNMNtjSDBmMClSKHVXMGYwTzBgMFUwRDACMA==" />
-                    <Content type="System.String">
-                      <Value Base64="WwAlAEMAdQByAHIAZQBuAHQAUgBvAHcAPQAoAPpRNV8zdcuKLADFYlNfBYApACUAXQDYaQ0ACgANAAoA+lE1X39ijYq3MLkwxjDgMGswATAfZ1CWbjDrj2MwZjBEMIswM3XLikwwQjCKMH4wWTACMA0ACgDlTgtObjDqMPMwrzCIMIow+lE1X39ijYq3MLkwxjDgMGsw7TCwMKQw8zBXMGYwATB/Yo2K5lEGdJIwTIhjMGYwTzBgMFUwRDACMA0ACgANAAoAWwAlAFAAYQBnAGUATgBhAHYAaQBnAGEAdABlAD0AKABoAG8AbQBlACwA+lE1X39ijYq3MLkwxjDgMCkAJQBdAA0ACgANAAoA" />
-                    </Content>
-                    <From type="System.String">
-                      <Value>example@example.com</Value>
-                    </From>
-                    <Recipient type="System.String">
-                      <Value>%AssignTo%</Value>
-                    </Recipient>
-                    <Subject type="System.String">
-                      <Value>［出張承認］期限の迫っている申請</Value>
-                    </Subject>
-                  </Item>
-                </CommandList>
-                <DeadlineLimitationSetting>
-                  <AfterRecordCreated>
-                    <TimeCount>10</TimeCount>
-                  </AfterRecordCreated>
-                  <ColumnName>出発日</ColumnName>
-                  <DeadlineLimitationType>DataColumn</DeadlineLimitationType>
-                </DeadlineLimitationSetting>
-                <DeadlineNotificationSetting>
-                  <BeforeDeadLineTime>
-                    <TimeCount>1</TimeCount>
-                    <TimeUnitType>Day</TimeUnitType>
-                  </BeforeDeadLineTime>
-                  <IsNeedNotification>True</IsNeedNotification>
-                  <IsRepeatNotification>True</IsRepeatNotification>
-                  <RepeatNotificationTimeInterval>
-                    <TimeCount>1</TimeCount>
-                    <TimeUnitType>Day</TimeUnitType>
-                  </RepeatNotificationTimeInterval>
-                </DeadlineNotificationSetting>
-              </Notification>
-              <StateName>申請中</StateName>
-            </ToState>
-          </Item>
-          <Item class="Forguncy.Model.FlowProcessPath" assembly="Forguncy">
-            <Action>
-              <ActionName>承認</ActionName>
-              <GUID>6adaab66-5c64-4c33-9730-1a62ffd72305</GUID>
-            </Action>
-            <Assignees>
-              <Item class="Forguncy.Model.FlowProcessRole" assembly="CommonUtilities">
-                <FlowProcessRoleType>None</FlowProcessRoleType>
-                <Name>（なし）</Name>
-              </Item>
-            </Assignees>
-            <Commands>
-              <CommandList>
-                <Item class="Forguncy.Model.NavigateCommand" assembly="Forguncy">
-                  <PageName>needapprovelist</PageName>
-                </Item>
-              </CommandList>
-              <GUID>c308b299-39a4-47da-9de9-cfaf2b258abb</GUID>
-            </Commands>
-            <Condition class="ForguncyDataAccess.GeneralCESqlCondition" assembly="ForguncyDataAccess">
-              <ColumnBindingInfo>
-                <ColumnName>日数</ColumnName>
-                <TableName>出張申請</TableName>
-              </ColumnBindingInfo>
-              <CompareType>LessThanOrEqualsTo</CompareType>
-              <Id>3ff8d312-a2fc-4e45-9cca-0cdf922cf14d</Id>
-              <Value type="System.String">
-                <Value>2</Value>
-              </Value>
-            </Condition>
-            <OperatorsPolicy>One</OperatorsPolicy>
-            <StartState>
-              <Id>fc842af0-02ed-4c8a-b9eb-4811f4d3167f</Id>
-              <Notification>
-                <CommandList>
-                  <Item class="Forguncy.Model.SendMailCommand" assembly="Forguncy">
-                    <Comments Base64="+lF6duVlbjAxAOVlTVJ+MGcwazB/Yo2K5lEGdEwwTIiPMIwwZjBEMGowRDA0WAhUazDhMPww6zBMMAGQiTCMMH4wWTACMA0ACgCFUblbbzBpkEJm+GZNMNtjSDBmMClSKHVXMGYwTzBgMFUwRDACMA==" />
-                    <Content type="System.String">
-                      <Value Base64="WwAlAEMAdQByAHIAZQBuAHQAUgBvAHcAPQAoAPpRNV8zdcuKLADFYlNfBYApACUAXQDYaQ0ACgANAAoA+lE1X39ijYq3MLkwxjDgMGswATAfZ1CWbjDrj2MwZjBEMIswM3XLikwwQjCKMH4wWTACMA0ACgDlTgtObjDqMPMwrzCIMIow+lE1X39ijYq3MLkwxjDgMGsw7TCwMKQw8zBXMGYwATB/Yo2K5lEGdJIwTIhjMGYwTzBgMFUwRDACMA0ACgANAAoAWwAlAFAAYQBnAGUATgBhAHYAaQBnAGEAdABlAD0AKABoAG8AbQBlACwA+lE1X39ijYq3MLkwxjDgMCkAJQBdAA0ACgANAAoA" />
-                    </Content>
-                    <From type="System.String">
-                      <Value>example@example.com</Value>
-                    </From>
-                    <Recipient type="System.String">
-                      <Value>%AssignTo%</Value>
-                    </Recipient>
-                    <Subject type="System.String">
-                      <Value>［出張承認］期限の迫っている申請</Value>
-                    </Subject>
-                  </Item>
-                </CommandList>
-                <DeadlineLimitationSetting>
-                  <AfterRecordCreated>
-                    <TimeCount>10</TimeCount>
-                  </AfterRecordCreated>
-                  <ColumnName>出発日</ColumnName>
-                  <DeadlineLimitationType>DataColumn</DeadlineLimitationType>
-                </DeadlineLimitationSetting>
-                <DeadlineNotificationSetting>
-                  <BeforeDeadLineTime>
-                    <TimeCount>1</TimeCount>
-                    <TimeUnitType>Day</TimeUnitType>
-                  </BeforeDeadLineTime>
-                  <IsNeedNotification>True</IsNeedNotification>
-                  <IsRepeatNotification>True</IsRepeatNotification>
-                  <RepeatNotificationTimeInterval>
-                    <TimeCount>1</TimeCount>
-                    <TimeUnitType>Day</TimeUnitType>
-                  </RepeatNotificationTimeInterval>
-                </DeadlineNotificationSetting>
-              </Notification>
-              <StateName>申請中</StateName>
-            </StartState>
-            <ToState>
-              <Id>8155b265-be12-42fd-a024-f701763ca751</Id>
-              <StateName>承認済</StateName>
-            </ToState>
-          </Item>
-          <Item class="Forguncy.Model.FlowProcessPath" assembly="Forguncy">
-            <Action>
-              <ActionName>承認</ActionName>
-              <GUID>6adaab66-5c64-4c33-9730-1a62ffd72305</GUID>
-            </Action>
-            <Assignees>
-              <Item class="Forguncy.Model.FlowProcessRole" assembly="CommonUtilities">
-                <FilterBy>
-                  <FilterByType>CurrentUser</FilterByType>
-                </FilterBy>
-                <FlowProcessRoleType>Group</FlowProcessRoleType>
-                <Name>部長</Name>
-              </Item>
-            </Assignees>
-            <Commands>
-              <CommandList>
-                <Item class="Forguncy.Model.NavigateCommand" assembly="Forguncy">
-                  <PageName>needapprovelist</PageName>
-                </Item>
-              </CommandList>
-              <GUID>fd7d6611-3320-4ee8-ba1a-284ccfc317e1</GUID>
-            </Commands>
-            <Condition class="ForguncyDataAccess.GeneralCESqlCondition" assembly="ForguncyDataAccess">
-              <ColumnBindingInfo>
-                <ColumnName>日数</ColumnName>
-                <TableName>出張申請</TableName>
-              </ColumnBindingInfo>
-              <CompareType>GreaterThan</CompareType>
-              <Id>ff8c2cdc-7707-4992-a281-b49924666ee8</Id>
-              <Value type="System.String">
-                <Value>2</Value>
-              </Value>
-            </Condition>
-            <StartState>
-              <Id>fc842af0-02ed-4c8a-b9eb-4811f4d3167f</Id>
-              <Notification>
-                <CommandList>
-                  <Item class="Forguncy.Model.SendMailCommand" assembly="Forguncy">
-                    <Comments Base64="+lF6duVlbjAxAOVlTVJ+MGcwazB/Yo2K5lEGdEwwTIiPMIwwZjBEMGowRDA0WAhUazDhMPww6zBMMAGQiTCMMH4wWTACMA0ACgCFUblbbzBpkEJm+GZNMNtjSDBmMClSKHVXMGYwTzBgMFUwRDACMA==" />
-                    <Content type="System.String">
-                      <Value Base64="WwAlAEMAdQByAHIAZQBuAHQAUgBvAHcAPQAoAPpRNV8zdcuKLADFYlNfBYApACUAXQDYaQ0ACgANAAoA+lE1X39ijYq3MLkwxjDgMGswATAfZ1CWbjDrj2MwZjBEMIswM3XLikwwQjCKMH4wWTACMA0ACgDlTgtObjDqMPMwrzCIMIow+lE1X39ijYq3MLkwxjDgMGsw7TCwMKQw8zBXMGYwATB/Yo2K5lEGdJIwTIhjMGYwTzBgMFUwRDACMA0ACgANAAoAWwAlAFAAYQBnAGUATgBhAHYAaQBnAGEAdABlAD0AKABoAG8AbQBlACwA+lE1X39ijYq3MLkwxjDgMCkAJQBdAA0ACgANAAoA" />
-                    </Content>
-                    <From type="System.String">
-                      <Value>example@example.com</Value>
-                    </From>
-                    <Recipient type="System.String">
-                      <Value>%AssignTo%</Value>
-                    </Recipient>
-                    <Subject type="System.String">
-                      <Value>［出張承認］期限の迫っている申請</Value>
-                    </Subject>
-                  </Item>
-                </CommandList>
-                <DeadlineLimitationSetting>
-                  <AfterRecordCreated>
-                    <TimeCount>10</TimeCount>
-                  </AfterRecordCreated>
-                  <ColumnName>出発日</ColumnName>
-                  <DeadlineLimitationType>DataColumn</DeadlineLimitationType>
-                </DeadlineLimitationSetting>
-                <DeadlineNotificationSetting>
-                  <BeforeDeadLineTime>
-                    <TimeCount>1</TimeCount>
-                    <TimeUnitType>Day</TimeUnitType>
-                  </BeforeDeadLineTime>
-                  <IsNeedNotification>True</IsNeedNotification>
-                  <IsRepeatNotification>True</IsRepeatNotification>
-                  <RepeatNotificationTimeInterval>
-                    <TimeCount>1</TimeCount>
-                    <TimeUnitType>Day</TimeUnitType>
-                  </RepeatNotificationTimeInterval>
-                </DeadlineNotificationSetting>
-              </Notification>
-              <StateName>申請中</StateName>
-            </StartState>
-            <ToState>
-              <Id>b16dc637-4421-452d-a93d-d58f82830e3d</Id>
-              <Notification>
-                <CommandList>
-                  <Item class="Forguncy.Model.SendMailCommand" assembly="Forguncy">
-                    <Comments Base64="+lF6duVlbjAxAOVlTVJ+MGcwazB/Yo2K5lEGdEwwTIiPMIwwZjBEMGowRDA0WAhUazDhMPww6zBMMAGQiTCMMH4wWTACMA0ACgCFUblbbzBpkEJm+GZNMNtjSDBmMClSKHVXMGYwTzBgMFUwRDACMA==" />
-                    <Content type="System.String">
-                      <Value Base64="WwAlAEMAdQByAHIAZQBuAHQAUgBvAHcAPQAoAPpRNV8zdcuKLADFYlNfBYApACUAXQDYaQ0ACgANAAoA+lE1X39ijYq3MLkwxjDgMGswATAfZ1CWbjDrj2MwZjBEMIswM3XLikwwQjCKMH4wWTACMA0ACgDlTgtObjDqMPMwrzCIMIow+lE1X39ijYq3MLkwxjDgMGsw7TCwMKQw8zBXMGYwATB/Yo2K5lEGdJIwTIhjMGYwTzBgMFUwRDACMA0ACgANAAoAWwAlAFAAYQBnAGUATgBhAHYAaQBnAGEAdABlAD0AKABoAG8AbQBlACwA+lE1X39ijYq3MLkwxjDgMCkAJQBdAA0ACgA=" />
-                    </Content>
-                    <From type="System.String">
-                      <Value>example@example.com</Value>
-                    </From>
-                    <Recipient type="System.String">
-                      <Value>%AssignTo%</Value>
-                    </Recipient>
-                    <Subject type="System.String">
-                      <Value>［出張承認］期限の迫っている申請</Value>
-                    </Subject>
-                  </Item>
-                </CommandList>
-                <DeadlineLimitationSetting>
-                  <AfterRecordCreated>
-                    <TimeCount>10</TimeCount>
-                  </AfterRecordCreated>
-                  <ColumnName>出発日</ColumnName>
-                  <DeadlineLimitationType>DataColumn</DeadlineLimitationType>
-                </DeadlineLimitationSetting>
-                <DeadlineNotificationSetting>
-                  <BeforeDeadLineTime>
-                    <TimeCount>1</TimeCount>
-                    <TimeUnitType>Day</TimeUnitType>
-                  </BeforeDeadLineTime>
-                  <IsNeedNotification>True</IsNeedNotification>
-                  <RepeatNotificationTimeInterval>
-                    <TimeCount>1</TimeCount>
-                  </RepeatNotificationTimeInterval>
-                </DeadlineNotificationSetting>
-              </Notification>
-              <StateName>部長承認申請中</StateName>
-            </ToState>
-          </Item>
-          <Item class="Forguncy.Model.FlowProcessPath" assembly="Forguncy">
-            <Action>
-              <ActionName>却下</ActionName>
-              <GUID>a7ac51c0-552b-41a0-aaf2-2fe4d2994a54</GUID>
-            </Action>
-            <Assignees>
-              <Item class="Forguncy.Model.FlowProcessRole" assembly="CommonUtilities">
-                <FlowProcessRoleType>Creator</FlowProcessRoleType>
-                <Name>作成者</Name>
-              </Item>
-            </Assignees>
-            <Commands>
-              <CommandList>
-                <Item class="Forguncy.Model.NavigateCommand" assembly="Forguncy">
-                  <PageName>needapprovelist</PageName>
-                </Item>
-              </CommandList>
-              <GUID>b23edd3a-511d-4a91-ad0c-1baedf2fb709</GUID>
-            </Commands>
-            <StartState>
-              <Id>fc842af0-02ed-4c8a-b9eb-4811f4d3167f</Id>
-              <Notification>
-                <CommandList>
-                  <Item class="Forguncy.Model.SendMailCommand" assembly="Forguncy">
-                    <Comments Base64="+lF6duVlbjAxAOVlTVJ+MGcwazB/Yo2K5lEGdEwwTIiPMIwwZjBEMGowRDA0WAhUazDhMPww6zBMMAGQiTCMMH4wWTACMA0ACgCFUblbbzBpkEJm+GZNMNtjSDBmMClSKHVXMGYwTzBgMFUwRDACMA==" />
-                    <Content type="System.String">
-                      <Value Base64="WwAlAEMAdQByAHIAZQBuAHQAUgBvAHcAPQAoAPpRNV8zdcuKLADFYlNfBYApACUAXQDYaQ0ACgANAAoA+lE1X39ijYq3MLkwxjDgMGswATAfZ1CWbjDrj2MwZjBEMIswM3XLikwwQjCKMH4wWTACMA0ACgDlTgtObjDqMPMwrzCIMIow+lE1X39ijYq3MLkwxjDgMGsw7TCwMKQw8zBXMGYwATB/Yo2K5lEGdJIwTIhjMGYwTzBgMFUwRDACMA0ACgANAAoAWwAlAFAAYQBnAGUATgBhAHYAaQBnAGEAdABlAD0AKABoAG8AbQBlACwA+lE1X39ijYq3MLkwxjDgMCkAJQBdAA0ACgANAAoA" />
-                    </Content>
-                    <From type="System.String">
-                      <Value>example@example.com</Value>
-                    </From>
-                    <Recipient type="System.String">
-                      <Value>%AssignTo%</Value>
-                    </Recipient>
-                    <Subject type="System.String">
-                      <Value>［出張承認］期限の迫っている申請</Value>
-                    </Subject>
-                  </Item>
-                </CommandList>
-                <DeadlineLimitationSetting>
-                  <AfterRecordCreated>
-                    <TimeCount>10</TimeCount>
-                  </AfterRecordCreated>
-                  <ColumnName>出発日</ColumnName>
-                  <DeadlineLimitationType>DataColumn</DeadlineLimitationType>
-                </DeadlineLimitationSetting>
-                <DeadlineNotificationSetting>
-                  <BeforeDeadLineTime>
-                    <TimeCount>1</TimeCount>
-                    <TimeUnitType>Day</TimeUnitType>
-                  </BeforeDeadLineTime>
-                  <IsNeedNotification>True</IsNeedNotification>
-                  <IsRepeatNotification>True</IsRepeatNotification>
-                  <RepeatNotificationTimeInterval>
-                    <TimeCount>1</TimeCount>
-                    <TimeUnitType>Day</TimeUnitType>
-                  </RepeatNotificationTimeInterval>
-                </DeadlineNotificationSetting>
-              </Notification>
-              <StateName>申請中</StateName>
-            </StartState>
-            <ToState>
-              <Id>c99516bf-4dc1-4396-a4b3-2506f01610c0</Id>
-              <StateName>新規</StateName>
-            </ToState>
-          </Item>
-          <Item class="Forguncy.Model.FlowProcessPath" assembly="Forguncy">
-            <Action>
-              <ActionName>承認</ActionName>
-              <GUID>d3343ca6-977e-428b-8647-42ce877b18b7</GUID>
-            </Action>
-            <Assignees>
-              <Item class="Forguncy.Model.FlowProcessRole" assembly="CommonUtilities">
-                <FlowProcessRoleType>None</FlowProcessRoleType>
-                <Name>（なし）</Name>
-              </Item>
-            </Assignees>
-            <Commands>
-              <CommandList>
-                <Item class="Forguncy.Model.NavigateCommand" assembly="Forguncy">
-                  <PageName>needapprovelist</PageName>
-                </Item>
-              </CommandList>
-              <GUID>6e1e02eb-7e13-45e5-91f0-e6ac2c589bec</GUID>
-            </Commands>
-            <StartState>
-              <Id>b16dc637-4421-452d-a93d-d58f82830e3d</Id>
-              <Notification>
-                <CommandList>
-                  <Item class="Forguncy.Model.SendMailCommand" assembly="Forguncy">
-                    <Comments Base64="+lF6duVlbjAxAOVlTVJ+MGcwazB/Yo2K5lEGdEwwTIiPMIwwZjBEMGowRDA0WAhUazDhMPww6zBMMAGQiTCMMH4wWTACMA0ACgCFUblbbzBpkEJm+GZNMNtjSDBmMClSKHVXMGYwTzBgMFUwRDACMA==" />
-                    <Content type="System.String">
-                      <Value Base64="WwAlAEMAdQByAHIAZQBuAHQAUgBvAHcAPQAoAPpRNV8zdcuKLADFYlNfBYApACUAXQDYaQ0ACgANAAoA+lE1X39ijYq3MLkwxjDgMGswATAfZ1CWbjDrj2MwZjBEMIswM3XLikwwQjCKMH4wWTACMA0ACgDlTgtObjDqMPMwrzCIMIow+lE1X39ijYq3MLkwxjDgMGsw7TCwMKQw8zBXMGYwATB/Yo2K5lEGdJIwTIhjMGYwTzBgMFUwRDACMA0ACgANAAoAWwAlAFAAYQBnAGUATgBhAHYAaQBnAGEAdABlAD0AKABoAG8AbQBlACwA+lE1X39ijYq3MLkwxjDgMCkAJQBdAA0ACgA=" />
-                    </Content>
-                    <From type="System.String">
-                      <Value>example@example.com</Value>
-                    </From>
-                    <Recipient type="System.String">
-                      <Value>%AssignTo%</Value>
-                    </Recipient>
-                    <Subject type="System.String">
-                      <Value>［出張承認］期限の迫っている申請</Value>
-                    </Subject>
-                  </Item>
-                </CommandList>
-                <DeadlineLimitationSetting>
-                  <AfterRecordCreated>
-                    <TimeCount>10</TimeCount>
-                  </AfterRecordCreated>
-                  <ColumnName>出発日</ColumnName>
-                  <DeadlineLimitationType>DataColumn</DeadlineLimitationType>
-                </DeadlineLimitationSetting>
-                <DeadlineNotificationSetting>
-                  <BeforeDeadLineTime>
-                    <TimeCount>1</TimeCount>
-                    <TimeUnitType>Day</TimeUnitType>
-                  </BeforeDeadLineTime>
-                  <IsNeedNotification>True</IsNeedNotification>
-                  <RepeatNotificationTimeInterval>
-                    <TimeCount>1</TimeCount>
-                  </RepeatNotificationTimeInterval>
-                </DeadlineNotificationSetting>
-              </Notification>
-              <StateName>部長承認申請中</StateName>
-            </StartState>
-            <ToState>
-              <Id>8155b265-be12-42fd-a024-f701763ca751</Id>
-              <StateName>承認済</StateName>
-            </ToState>
-          </Item>
-          <Item class="Forguncy.Model.FlowProcessPath" assembly="Forguncy">
-            <Action>
-              <ActionName>却下</ActionName>
-              <GUID>4f822531-6a72-48ac-87f4-f57137793b40</GUID>
-            </Action>
-            <Assignees>
-              <Item class="Forguncy.Model.FlowProcessRole" assembly="CommonUtilities">
-                <FilterBy>
-                  <FilterByType>Creator</FilterByType>
-                </FilterBy>
-                <FlowProcessRoleType>Group</FlowProcessRoleType>
-                <Name>リーダー</Name>
-              </Item>
-            </Assignees>
-            <Commands>
-              <CommandList>
-                <Item class="Forguncy.Model.NavigateCommand" assembly="Forguncy">
-                  <PageName>needapprovelist</PageName>
-                </Item>
-              </CommandList>
-              <GUID>97d8244d-e868-46fe-b846-9080f7482d51</GUID>
-            </Commands>
-            <StartState>
-              <Id>b16dc637-4421-452d-a93d-d58f82830e3d</Id>
-              <Notification>
-                <CommandList>
-                  <Item class="Forguncy.Model.SendMailCommand" assembly="Forguncy">
-                    <Comments Base64="+lF6duVlbjAxAOVlTVJ+MGcwazB/Yo2K5lEGdEwwTIiPMIwwZjBEMGowRDA0WAhUazDhMPww6zBMMAGQiTCMMH4wWTACMA0ACgCFUblbbzBpkEJm+GZNMNtjSDBmMClSKHVXMGYwTzBgMFUwRDACMA==" />
-                    <Content type="System.String">
-                      <Value Base64="WwAlAEMAdQByAHIAZQBuAHQAUgBvAHcAPQAoAPpRNV8zdcuKLADFYlNfBYApACUAXQDYaQ0ACgANAAoA+lE1X39ijYq3MLkwxjDgMGswATAfZ1CWbjDrj2MwZjBEMIswM3XLikwwQjCKMH4wWTACMA0ACgDlTgtObjDqMPMwrzCIMIow+lE1X39ijYq3MLkwxjDgMGsw7TCwMKQw8zBXMGYwATB/Yo2K5lEGdJIwTIhjMGYwTzBgMFUwRDACMA0ACgANAAoAWwAlAFAAYQBnAGUATgBhAHYAaQBnAGEAdABlAD0AKABoAG8AbQBlACwA+lE1X39ijYq3MLkwxjDgMCkAJQBdAA0ACgA=" />
-                    </Content>
-                    <From type="System.String">
-                      <Value>example@example.com</Value>
-                    </From>
-                    <Recipient type="System.String">
-                      <Value>%AssignTo%</Value>
-                    </Recipient>
-                    <Subject type="System.String">
-                      <Value>［出張承認］期限の迫っている申請</Value>
-                    </Subject>
-                  </Item>
-                </CommandList>
-                <DeadlineLimitationSetting>
-                  <AfterRecordCreated>
-                    <TimeCount>10</TimeCount>
-                  </AfterRecordCreated>
-                  <ColumnName>出発日</ColumnName>
-                  <DeadlineLimitationType>DataColumn</DeadlineLimitationType>
-                </DeadlineLimitationSetting>
-                <DeadlineNotificationSetting>
-                  <BeforeDeadLineTime>
-                    <TimeCount>1</TimeCount>
-                    <TimeUnitType>Day</TimeUnitType>
-                  </BeforeDeadLineTime>
-                  <IsNeedNotification>True</IsNeedNotification>
-                  <RepeatNotificationTimeInterval>
-                    <TimeCount>1</TimeCount>
-                  </RepeatNotificationTimeInterval>
-                </DeadlineNotificationSetting>
-              </Notification>
-              <StateName>部長承認申請中</StateName>
-            </StartState>
-            <ToState>
-              <Id>bef4c013-dcd7-4d7d-9aba-bac20d42d5da</Id>
-              <StateName>部長却下</StateName>
-            </ToState>
-          </Item>
-          <Item class="Forguncy.Model.FlowProcessPath" assembly="Forguncy">
-            <Action>
-              <ActionName>再提出</ActionName>
-              <GUID>34b559eb-b04e-497b-b4b5-426c06ba49cf</GUID>
-            </Action>
-            <Assignees>
-              <Item class="Forguncy.Model.FlowProcessRole" assembly="CommonUtilities">
-                <FilterBy>
-                  <FilterByType>CurrentUser</FilterByType>
-                </FilterBy>
-                <FlowProcessRoleType>Group</FlowProcessRoleType>
-                <Name>部長</Name>
-              </Item>
-            </Assignees>
-            <Commands>
-              <CommandList>
-                <Item class="Forguncy.Model.NavigateCommand" assembly="Forguncy">
-                  <PageName>needapprovelist</PageName>
-                </Item>
-              </CommandList>
-              <GUID>fd4e154b-4beb-4cb9-824a-5eebfa92c0a8</GUID>
-            </Commands>
-            <StartState>
-              <Id>bef4c013-dcd7-4d7d-9aba-bac20d42d5da</Id>
-              <StateName>部長却下</StateName>
-            </StartState>
-            <ToState>
-              <Id>b16dc637-4421-452d-a93d-d58f82830e3d</Id>
-              <Notification>
-                <CommandList>
-                  <Item class="Forguncy.Model.SendMailCommand" assembly="Forguncy">
-                    <Comments Base64="+lF6duVlbjAxAOVlTVJ+MGcwazB/Yo2K5lEGdEwwTIiPMIwwZjBEMGowRDA0WAhUazDhMPww6zBMMAGQiTCMMH4wWTACMA0ACgCFUblbbzBpkEJm+GZNMNtjSDBmMClSKHVXMGYwTzBgMFUwRDACMA==" />
-                    <Content type="System.String">
-                      <Value Base64="WwAlAEMAdQByAHIAZQBuAHQAUgBvAHcAPQAoAPpRNV8zdcuKLADFYlNfBYApACUAXQDYaQ0ACgANAAoA+lE1X39ijYq3MLkwxjDgMGswATAfZ1CWbjDrj2MwZjBEMIswM3XLikwwQjCKMH4wWTACMA0ACgDlTgtObjDqMPMwrzCIMIow+lE1X39ijYq3MLkwxjDgMGsw7TCwMKQw8zBXMGYwATB/Yo2K5lEGdJIwTIhjMGYwTzBgMFUwRDACMA0ACgANAAoAWwAlAFAAYQBnAGUATgBhAHYAaQBnAGEAdABlAD0AKABoAG8AbQBlACwA+lE1X39ijYq3MLkwxjDgMCkAJQBdAA0ACgA=" />
-                    </Content>
-                    <From type="System.String">
-                      <Value>example@example.com</Value>
-                    </From>
-                    <Recipient type="System.String">
-                      <Value>%AssignTo%</Value>
-                    </Recipient>
-                    <Subject type="System.String">
-                      <Value>［出張承認］期限の迫っている申請</Value>
-                    </Subject>
-                  </Item>
-                </CommandList>
-                <DeadlineLimitationSetting>
-                  <AfterRecordCreated>
-                    <TimeCount>10</TimeCount>
-                  </AfterRecordCreated>
-                  <ColumnName>出発日</ColumnName>
-                  <DeadlineLimitationType>DataColumn</DeadlineLimitationType>
-                </DeadlineLimitationSetting>
-                <DeadlineNotificationSetting>
-                  <BeforeDeadLineTime>
-                    <TimeCount>1</TimeCount>
-                    <TimeUnitType>Day</TimeUnitType>
-                  </BeforeDeadLineTime>
-                  <IsNeedNotification>True</IsNeedNotification>
-                  <RepeatNotificationTimeInterval>
-                    <TimeCount>1</TimeCount>
-                  </RepeatNotificationTimeInterval>
-                </DeadlineNotificationSetting>
-              </Notification>
-              <StateName>部長承認申請中</StateName>
-            </ToState>
-          </Item>
-          <Item class="Forguncy.Model.FlowProcessPath" assembly="Forguncy">
-            <Action>
-              <ActionName>却下</ActionName>
-              <GUID>b8bb502a-c065-42a5-90bd-fa87ba631ee5</GUID>
-            </Action>
-            <Assignees>
-              <Item class="Forguncy.Model.FlowProcessRole" assembly="CommonUtilities">
-                <FlowProcessRoleType>Creator</FlowProcessRoleType>
-                <Name>Creator</Name>
-              </Item>
-            </Assignees>
-            <Commands>
-              <CommandList>
-                <Item class="Forguncy.Model.NavigateCommand" assembly="Forguncy">
-                  <PageName>needapprovelist</PageName>
-                </Item>
-              </CommandList>
-              <GUID>b4f21dc0-3a54-48f8-b43c-3a96c9258c3c</GUID>
-            </Commands>
-            <StartState>
-              <Id>bef4c013-dcd7-4d7d-9aba-bac20d42d5da</Id>
-              <StateName>部長却下</StateName>
-            </StartState>
-            <ToState>
-              <Id>c99516bf-4dc1-4396-a4b3-2506f01610c0</Id>
-              <StateName>新規</StateName>
-            </ToState>
-          </Item>
-        </FlowPaths>
-        <FlowStates>
-          <Item class="Forguncy.Model.FlowState" assembly="Forguncy">
-            <Id>c99516bf-4dc1-4396-a4b3-2506f01610c0</Id>
-            <StateName>新規</StateName>
-          </Item>
-          <Item class="Forguncy.Model.FlowState" assembly="Forguncy">
-            <Id>fc842af0-02ed-4c8a-b9eb-4811f4d3167f</Id>
-            <Notification>
-              <CommandList>
-                <Item class="Forguncy.Model.SendMailCommand" assembly="Forguncy">
-                  <Comments Base64="+lF6duVlbjAxAOVlTVJ+MGcwazB/Yo2K5lEGdEwwTIiPMIwwZjBEMGowRDA0WAhUazDhMPww6zBMMAGQiTCMMH4wWTACMA0ACgCFUblbbzBpkEJm+GZNMNtjSDBmMClSKHVXMGYwTzBgMFUwRDACMA==" />
-                  <Content type="System.String">
-                    <Value Base64="WwAlAEMAdQByAHIAZQBuAHQAUgBvAHcAPQAoAPpRNV8zdcuKLADFYlNfBYApACUAXQDYaQ0ACgANAAoA+lE1X39ijYq3MLkwxjDgMGswATAfZ1CWbjDrj2MwZjBEMIswM3XLikwwQjCKMH4wWTACMA0ACgDlTgtObjDqMPMwrzCIMIow+lE1X39ijYq3MLkwxjDgMGsw7TCwMKQw8zBXMGYwATB/Yo2K5lEGdJIwTIhjMGYwTzBgMFUwRDACMA0ACgANAAoAWwAlAFAAYQBnAGUATgBhAHYAaQBnAGEAdABlAD0AKABoAG8AbQBlACwA+lE1X39ijYq3MLkwxjDgMCkAJQBdAA0ACgANAAoA" />
-                  </Content>
-                  <From type="System.String">
-                    <Value>example@example.com</Value>
-                  </From>
-                  <Recipient type="System.String">
-                    <Value>%AssignTo%</Value>
-                  </Recipient>
-                  <Subject type="System.String">
-                    <Value>［出張承認］期限の迫っている申請</Value>
-                  </Subject>
-                </Item>
-              </CommandList>
-              <DeadlineLimitationSetting>
-                <AfterRecordCreated>
-                  <TimeCount>10</TimeCount>
-                </AfterRecordCreated>
-                <ColumnName>出発日</ColumnName>
-                <DeadlineLimitationType>DataColumn</DeadlineLimitationType>
-              </DeadlineLimitationSetting>
-              <DeadlineNotificationSetting>
-                <BeforeDeadLineTime>
-                  <TimeCount>1</TimeCount>
-                  <TimeUnitType>Day</TimeUnitType>
-                </BeforeDeadLineTime>
-                <IsNeedNotification>True</IsNeedNotification>
-                <IsRepeatNotification>True</IsRepeatNotification>
-                <RepeatNotificationTimeInterval>
-                  <TimeCount>1</TimeCount>
-                  <TimeUnitType>Day</TimeUnitType>
-                </RepeatNotificationTimeInterval>
-              </DeadlineNotificationSetting>
-            </Notification>
-            <StateName>申請中</StateName>
-          </Item>
-          <Item class="Forguncy.Model.FlowState" assembly="Forguncy">
-            <Id>b16dc637-4421-452d-a93d-d58f82830e3d</Id>
-            <Notification>
-              <CommandList>
-                <Item class="Forguncy.Model.SendMailCommand" assembly="Forguncy">
-                  <Comments Base64="+lF6duVlbjAxAOVlTVJ+MGcwazB/Yo2K5lEGdEwwTIiPMIwwZjBEMGowRDA0WAhUazDhMPww6zBMMAGQiTCMMH4wWTACMA0ACgCFUblbbzBpkEJm+GZNMNtjSDBmMClSKHVXMGYwTzBgMFUwRDACMA==" />
-                  <Content type="System.String">
-                    <Value Base64="WwAlAEMAdQByAHIAZQBuAHQAUgBvAHcAPQAoAPpRNV8zdcuKLADFYlNfBYApACUAXQDYaQ0ACgANAAoA+lE1X39ijYq3MLkwxjDgMGswATAfZ1CWbjDrj2MwZjBEMIswM3XLikwwQjCKMH4wWTACMA0ACgDlTgtObjDqMPMwrzCIMIow+lE1X39ijYq3MLkwxjDgMGsw7TCwMKQw8zBXMGYwATB/Yo2K5lEGdJIwTIhjMGYwTzBgMFUwRDACMA0ACgANAAoAWwAlAFAAYQBnAGUATgBhAHYAaQBnAGEAdABlAD0AKABoAG8AbQBlACwA+lE1X39ijYq3MLkwxjDgMCkAJQBdAA0ACgA=" />
-                  </Content>
-                  <From type="System.String">
-                    <Value>example@example.com</Value>
-                  </From>
-                  <Recipient type="System.String">
-                    <Value>%AssignTo%</Value>
-                  </Recipient>
-                  <Subject type="System.String">
-                    <Value>［出張承認］期限の迫っている申請</Value>
-                  </Subject>
-                </Item>
-              </CommandList>
-              <DeadlineLimitationSetting>
-                <AfterRecordCreated>
-                  <TimeCount>10</TimeCount>
-                </AfterRecordCreated>
-                <ColumnName>出発日</ColumnName>
-                <DeadlineLimitationType>DataColumn</DeadlineLimitationType>
-              </DeadlineLimitationSetting>
-              <DeadlineNotificationSetting>
-                <BeforeDeadLineTime>
-                  <TimeCount>1</TimeCount>
-                  <TimeUnitType>Day</TimeUnitType>
-                </BeforeDeadLineTime>
-                <IsNeedNotification>True</IsNeedNotification>
-                <RepeatNotificationTimeInterval>
-                  <TimeCount>1</TimeCount>
-                </RepeatNotificationTimeInterval>
-              </DeadlineNotificationSetting>
-            </Notification>
-            <StateName>部長承認申請中</StateName>
-          </Item>
-          <Item class="Forguncy.Model.FlowState" assembly="Forguncy">
-            <Id>bef4c013-dcd7-4d7d-9aba-bac20d42d5da</Id>
-            <StateName>部長却下</StateName>
-          </Item>
-          <Item class="Forguncy.Model.FlowState" assembly="Forguncy">
-            <Id>8155b265-be12-42fd-a024-f701763ca751</Id>
-            <StateName>承認済</StateName>
-          </Item>
-        </FlowStates>
-        <IsEnabled>True</IsEnabled>
-      </FlowProcess>
-      <Name>出張申請</Name>
+      <Name>原材料マスタ</Name>
       <PrimaryKey>
         <Item type="System.String">
           <Value>ID</Value>
@@ -1083,96 +146,157 @@
       <Weight>0</Weight>
     </Item>
     <Item class="Forguncy.Model.Tables.Table" assembly="Forguncy">
-      <BuiltInViewInfo>
-        <CreateViewSql>SELECT "FGC_UserName" AS "ユーザー名","FGC_FullName" AS "氏名","FGC_Email" AS "メールアドレス","FGC_Role" AS "ロール","FGC_OrganizationSuperior" AS "上位組織のメンバー","事業部","部門","課グループ" FROM "FGC_UserInfoTable";</CreateViewSql>
-        <ViewName>ユーザー情報ビュー</ViewName>
-        <ViewType>BuiltInUserInfo</ViewType>
-      </BuiltInViewInfo>
       <Columns>
         <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>System.String</DatabaseColumnType>
-          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <AutoIncrement>True</AutoIncrement>
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
           <MaxLength>-1</MaxLength>
-          <Name>ユーザー名</Name>
+          <Name>ID</Name>
           <Required>True</Required>
           <Unique>True</Unique>
         </Item>
         <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
           <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>System.String</DatabaseColumnType>
-          <DefaultValue class="System.DBNull" assembly="mscorlib" />
-          <MaxLength>-1</MaxLength>
-          <Name>氏名</Name>
+          <Name>店舗名</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Int64</ColumnType>
+          <Name>ZipCode</Name>
         </Item>
         <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
           <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>System.String</DatabaseColumnType>
-          <DefaultValue class="System.DBNull" assembly="mscorlib" />
-          <MaxLength>-1</MaxLength>
-          <Name>メールアドレス</Name>
+          <Name>住所</Name>
         </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+        <Item class="Forguncy.Model.Tables.UserExtraBingingColumn" assembly="Forguncy">
           <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>System.String</DatabaseColumnType>
-          <DefaultValue class="System.DBNull" assembly="mscorlib" />
-          <MaxLength>-1</MaxLength>
-          <Name>ロール</Name>
+          <Name>FGC_Creator</Name>
         </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>System.String</DatabaseColumnType>
-          <DefaultValue class="System.DBNull" assembly="mscorlib" />
-          <MaxLength>-1</MaxLength>
-          <Name>上位組織のメンバー</Name>
+        <Item class="Forguncy.Model.Tables.DateExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.DateTime</ColumnType>
+          <Name>FGC_CreateDate</Name>
         </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+        <Item class="Forguncy.Model.Tables.UserExtraBingingColumn" assembly="Forguncy">
           <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>System.String</DatabaseColumnType>
-          <DefaultValue class="System.DBNull" assembly="mscorlib" />
-          <MaxLength>-1</MaxLength>
-          <Name>事業部</Name>
+          <Name>FGC_LastModifier</Name>
         </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
-          <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>System.String</DatabaseColumnType>
-          <DefaultValue class="System.DBNull" assembly="mscorlib" />
-          <MaxLength>-1</MaxLength>
-          <Name>部門</Name>
+        <Item class="Forguncy.Model.Tables.DateExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.DateTime</ColumnType>
+          <Name>FGC_LastModifyDate</Name>
         </Item>
-        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+        <Item class="Forguncy.Model.Tables.FormulaColumn" assembly="Forguncy">
           <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>System.String</DatabaseColumnType>
-          <DefaultValue class="System.DBNull" assembly="mscorlib" />
-          <MaxLength>-1</MaxLength>
-          <Name>課グループ</Name>
+          <Formula>LEFT([ZipCode],3)&amp;"-"&amp;RIGHT([ZipCode],4)</Formula>
+          <Name>郵便番号</Name>
         </Item>
       </Columns>
-      <Name>ユーザー情報ビュー</Name>
+      <Name>店舗マスタ</Name>
       <PrimaryKey>
         <Item type="System.String">
-          <Value>ユーザー名</Value>
+          <Value>ID</Value>
         </Item>
       </PrimaryKey>
-      <Weight>1</Weight>
+      <Weight>3</Weight>
     </Item>
     <Item class="Forguncy.Model.Tables.Table" assembly="Forguncy">
       <Columns>
         <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
           <AutoIncrement>True</AutoIncrement>
-          <ColumnType>System.Int32</ColumnType>
-          <DatabaseColumnType>int</DatabaseColumnType>
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
           <MaxLength>-1</MaxLength>
           <Name>ID</Name>
-          <ReadOnly>True</ReadOnly>
           <Required>True</Required>
           <Unique>True</Unique>
         </Item>
         <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
           <ColumnType>System.String</ColumnType>
-          <DatabaseColumnType>nvarchar</DatabaseColumnType>
-          <MaxLength>4000</MaxLength>
-          <Name>Time</Name>
+          <Name>業者名</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Int64</ColumnType>
+          <Name>ZipCode</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Name>住所</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Name>電話番号</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Name>担当者名</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Name>メールアドレス_ローカル</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Name>メールアドレス_ドメイン</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.UserExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Name>FGC_Creator</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.DateExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.DateTime</ColumnType>
+          <Name>FGC_CreateDate</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.UserExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Name>FGC_LastModifier</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.DateExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.DateTime</ColumnType>
+          <Name>FGC_LastModifyDate</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.FormulaColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Formula>[メールアドレス_ローカル]&amp;"@"&amp;[メールアドレス_ドメイン]</Formula>
+          <Name>メールアドレス</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.FormulaColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Formula>LEFT([ZipCode],3)&amp;"-"&amp;RIGHT([ZipCode],4)</Formula>
+          <Name>郵便番号</Name>
+        </Item>
+      </Columns>
+      <Name>業者マスタ</Name>
+      <PrimaryKey>
+        <Item type="System.String">
+          <Value>ID</Value>
+        </Item>
+      </PrimaryKey>
+      <Weight>2</Weight>
+    </Item>
+    <Item class="Forguncy.Model.Tables.Table" assembly="Forguncy">
+      <Columns>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <AutoIncrement>True</AutoIncrement>
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>ID</Name>
+          <Required>True</Required>
+          <Unique>True</Unique>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <Name>業者ID</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <Name>原材料ID</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <Name>店舗ID</Name>
         </Item>
         <Item class="Forguncy.Model.Tables.UserExtraBingingColumn" assembly="Forguncy">
           <ColumnType>System.String</ColumnType>
@@ -1191,13 +315,351 @@
           <Name>FGC_LastModifyDate</Name>
         </Item>
       </Columns>
-      <Name>時間</Name>
+      <Name>発注先マスタ</Name>
       <PrimaryKey>
         <Item type="System.String">
           <Value>ID</Value>
         </Item>
       </PrimaryKey>
-      <Weight>2</Weight>
+      <Weight>1</Weight>
+    </Item>
+    <Item class="Forguncy.Model.Tables.Table" assembly="Forguncy">
+      <Columns>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <AutoIncrement>True</AutoIncrement>
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>ID</Name>
+          <Required>True</Required>
+          <Unique>True</Unique>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Int64</ColumnType>
+          <Name>店舗ID</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <Name>納品日ID</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <Name>数量</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <Name>備考</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <Name>業者ID</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <Name>原材料ID</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Boolean</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <Name>発注Fg</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.UserExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Name>FGC_Creator</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.DateExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.DateTime</ColumnType>
+          <Name>FGC_CreateDate</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.UserExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Name>FGC_LastModifier</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.DateExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.DateTime</ColumnType>
+          <Name>FGC_LastModifyDate</Name>
+        </Item>
+      </Columns>
+      <Name>発注管理テーブル</Name>
+      <PrimaryKey>
+        <Item type="System.String">
+          <Value>ID</Value>
+        </Item>
+      </PrimaryKey>
+      <Weight>4</Weight>
+    </Item>
+    <Item class="Forguncy.Model.Tables.Table" assembly="Forguncy">
+      <Columns>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <AutoIncrement>True</AutoIncrement>
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>ID</Name>
+          <Required>True</Required>
+          <Unique>True</Unique>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.DateTime</ColumnType>
+          <Name>納品希望日</Name>
+          <Unique>True</Unique>
+        </Item>
+        <Item class="Forguncy.Model.Tables.UserExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Name>FGC_Creator</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.DateExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.DateTime</ColumnType>
+          <Name>FGC_CreateDate</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.UserExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Name>FGC_LastModifier</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.DateExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.DateTime</ColumnType>
+          <Name>FGC_LastModifyDate</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.FormulaColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Formula>MONTH([納品希望日])&amp;"月"&amp;DAY([納品希望日])&amp;"日"</Formula>
+          <Name>月日</Name>
+        </Item>
+      </Columns>
+      <Name>納品日テーブル</Name>
+      <PrimaryKey>
+        <Item type="System.String">
+          <Value>ID</Value>
+        </Item>
+      </PrimaryKey>
+      <Weight>5</Weight>
+    </Item>
+    <Item class="Forguncy.Model.Tables.Table" assembly="Forguncy">
+      <BuiltInViewInfo>
+        <CreateViewSql Base64="UwBFAEwARQBDAFQADQAKACAAIAANfcFU5WXGMPww1jDrMC4ASQBEACAAfAB8ACAAIgAtACIAIAB8AHwAIACXXheC3jC5ML8wLgBJAEQAIAB8AHwAIAAiAC0AIgAgAHwAfAAgAG1pBYDeMLkwvzAuAEkARAAgAEEAUwAgACOQUH2tMPwwLAANAAoAIAAgAA19wVTlZcYw/DDWMOswLgBJAEQAIABBAFMAIAANfcFU5WVJAEQALAANAAoAIAAgAA19wVTlZcYw/DDWMOswLgANfcFUDF4bZ+VlLAANAAoAIAAgAJdeF4LeMLkwvzAuAEkARAAgAEEAUwAgAJdeF4JJAEQALAANAAoAIAAgAJdeF4LeMLkwvzAuAJdeF4INVCwADQAKACAAIACXXheC3jC5ML8wLgBaAGkAcABDAG8AZABlACAAQQBTACAAl14XgloAaQBwAEMAbwBkAGUALAANAAoAIAAgAJdeF4LeMLkwvzAuAE9PQGIgAEEAUwAgAJdeF4JPT0BiLAANAAoAIAAgAG1pBYDeMLkwvzAuAEkARAAgAEEAUwAgAG1pBYBJAEQALAANAAoAIAAgAG1pBYDeMLkwvzAuAG1pBYANVCwADQAKACAAIABtaQWA3jC5ML8wLgBaAGkAcABDAG8AZABlACAAQQBTACAAbWkFgFoAaQBwAEMAbwBkAGUALAANAAoAIAAgAG1pBYDeMLkwvzAuAE9PQGIgAEEAUwAgAG1pBYBPT0BiLAANAAoAIAAgAG1pBYDeMLkwvzAuAPuWcYpqdfdTLAANAAoAIAAgAG1pBYDeMLkwvzAuAMViU18FgA1ULAANAAoAIAAgAG1pBYDeMLkwvzAuAOEw/DDrMKIwyTDsMLkwXwDtMPwwqzDrMCwADQAKACAAIABtaQWA3jC5ML8wLgDhMPww6zCiMMkw7DC5MF8AyTDhMKQw8zAsACAAIAANAAoAIAAgAJ9TUGeZZd4wuTC/MC4AwVQNVCwADQAKACAAIACfU1BnmWXeMLkwvzAuAFhTTU8sAA0ACgAgACAAenbobKF7BnTGMPww1jDrMC4ASQBEACAAQQBTACAAenbobKF7BnRJAEQALAANAAoAIAAgAHp26GyhewZ0xjD8MNYw6zAuAHBlz5EsAA0ACgAgACAAenbobKF7BnTGMPww1jDrMC4AenbobEYAZwANAAoARgBSAE8ATQAgAHp26GyhewZ0xjD8MNYw6zAgAA0ACgBMAEUARgBUACAASgBPAEkATgAgAA19wVTlZcYw/DDWMOswIABPAE4ADQAKAHp26GyhewZ0xjD8MNYw6zAuAA19wVTlZUkARAAgAD0AIAANfcFU5WXGMPww1jDrMC4ASQBEAA0ACgBMAEUARgBUACAASgBPAEkATgAgAJdeF4LeMLkwvzAgAE8ATgANAAoAenbobKF7BnTGMPww1jDrMC4Al14XgkkARAAgAD0AIACXXheC3jC5ML8wLgBJAEQADQAKAEwARQBGAFQAIABKAE8ASQBOACAAbWkFgN4wuTC/MCAATwBOAA0ACgB6duhsoXsGdMYw/DDWMOswLgBtaQWASQBEACAAPQAgAG1pBYDeMLkwvzAuAEkARAANAAoATABFAEYAVAAgAEoATwBJAE4AIACfU1BnmWXeMLkwvzAgAE8ATgANAAoAenbobKF7BnTGMPww1jDrMC4An1NQZ5llSQBEACAAPQAgAJ9TUGeZZd4wuTC/MC4ASQBEAA==" />
+        <ViewName>納品明細ビュー</ViewName>
+      </BuiltInViewInfo>
+      <Columns>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>連結キー</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <AutoIncrement>True</AutoIncrement>
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>納品日ID</Name>
+          <Required>True</Required>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>納品希望日</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <AutoIncrement>True</AutoIncrement>
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>店舗ID</Name>
+          <Required>True</Required>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>店舗名</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>店舗ZipCode</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>店舗住所</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <AutoIncrement>True</AutoIncrement>
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>業者ID</Name>
+          <Required>True</Required>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>業者名</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>業者ZipCode</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>業者住所</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>電話番号</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>担当者名</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>メールアドレス_ローカル</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>メールアドレス_ドメイン</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>品名</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>単位</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <AutoIncrement>True</AutoIncrement>
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>発注管理ID</Name>
+          <Required>True</Required>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>数量</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>発注Fg</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.FormulaColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Formula>LEFT([店舗ZipCode],3)&amp;"-"&amp;RIGHT([店舗ZipCode],4)</Formula>
+          <Name>店舗郵便番号</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.FormulaColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Formula>LEFT([業者ZipCode],3)&amp;"-"&amp;RIGHT([業者ZipCode],4)</Formula>
+          <Name>業者郵便番号</Name>
+        </Item>
+      </Columns>
+      <Name>納品明細ビュー</Name>
+      <Weight>6</Weight>
+    </Item>
+    <Item class="Forguncy.Model.Tables.Table" assembly="Forguncy">
+      <BuiltInViewInfo>
+        <CreateViewSql Base64="UwBFAEwARQBDAFQADQAKACAAIAANfcFU5WXGMPww1jDrMC4ASQBEACAAfAB8ACAAIgAtACIAIAB8AHwAIACXXheC3jC5ML8wLgBJAEQAIAB8AHwAIAAiAC0AIgAgAHwAfAAgAG1pBYDeMLkwvzAuAEkARAAgAEEAUwAgACOQUH2tMPwwLAANAAoAIAAgAA19wVTlZcYw/DDWMOswLgBJAEQAIABBAFMAIAANfcFU5WVJAEQALAANAAoAIAAgAJdeF4LeMLkwvzAuAEkARAAgAEEAUwAgAJdeF4JJAEQALAANAAoAIAAgAG1pBYDeMLkwvzAuAEkARAAgAEEAUwAgAG1pBYBJAEQADQAKAEYAUgBPAE0AIAB6duhsoXsGdMYw/DDWMOswIAANAAoATABFAEYAVAAgAEoATwBJAE4AIAANfcFU5WXGMPww1jDrMCAATwBOAA0ACgB6duhsoXsGdMYw/DDWMOswLgANfcFU5WVJAEQAIAA9ACAADX3BVOVlxjD8MNYw6zAuAEkARAANAAoATABFAEYAVAAgAEoATwBJAE4AIACXXheC3jC5ML8wIABPAE4ADQAKAHp26GyhewZ0xjD8MNYw6zAuAJdeF4JJAEQAIAA9ACAAl14Xgt4wuTC/MC4ASQBEAA0ACgBMAEUARgBUACAASgBPAEkATgAgAG1pBYDeMLkwvzAgAE8ATgANAAoAenbobKF7BnTGMPww1jDrMC4AbWkFgEkARAAgAD0AIABtaQWA3jC5ML8wLgBJAEQADQAKAEwARQBGAFQAIABKAE8ASQBOACAAn1NQZ5ll3jC5ML8wIABPAE4ADQAKAHp26GyhewZ0xjD8MNYw6zAuAJ9TUGeZZUkARAAgAD0AIACfU1BnmWXeMLkwvzAuAEkARAANAAoARwBSAE8AVQBQACAAQgBZACAADX3BVOVlxjD8MNYw6zAuAEkARAAsACAAl14Xgt4wuTC/MC4ASQBEACwAIABtaQWA3jC5ML8wLgBJAEQA" />
+        <ViewName>納品ビュー</ViewName>
+      </BuiltInViewInfo>
+      <Columns>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>連結キー</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <AutoIncrement>True</AutoIncrement>
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>納品日ID</Name>
+          <Required>True</Required>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <AutoIncrement>True</AutoIncrement>
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>店舗ID</Name>
+          <Required>True</Required>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <AutoIncrement>True</AutoIncrement>
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>業者ID</Name>
+          <Required>True</Required>
+        </Item>
+        <Item class="Forguncy.Model.Tables.FormulaColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Formula>[連結キー]&amp;"-"&amp;RIGHT(YEAR(NOW()),2)&amp;MONTH(NOW())&amp;DAY(NOW())</Formula>
+          <Name>発注No</Name>
+        </Item>
+      </Columns>
+      <Name>納品ビュー</Name>
+      <PrimaryKey>
+        <Item type="System.String">
+          <Value>連結キー</Value>
+        </Item>
+      </PrimaryKey>
+      <Weight>7</Weight>
     </Item>
   </Tables>
 </TableSet>
